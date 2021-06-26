@@ -62,7 +62,7 @@ body {
     display: grid; /*Uso de grid*/
     align-content: center;
     margin-top: 25px;
-    grid-template-columns: 30% auto;
+    grid-template-columns: 20% auto;
     grid-template-rows: auto;
     align-items: center;
     grid-template-areas:
@@ -117,6 +117,22 @@ ul ul {
     display:block;
 }
 
+/*Footer*/
+
+footer {
+    text-align: center;
+    background-color: #FCF2F2;
+    padding: 80px;
+    justify-content: center;
+}
+
+.seccionFooter {
+    margin: 25px;
+    display: flex; /*Uso de flex*/
+    flex-direction: row;
+    justify-content: center;  
+}
+
  /*Botón genérico*/
 
 .boton {
@@ -156,10 +172,12 @@ ul ul {
     color: #FF848A;
 }
 
- /*Comienzo de sección 1*/
+ /*Comienzo Home*/
+
+ /*Comienzo de seccion 1 - Home*/
 
  .seccionUno {
-     height: 850px;
+     height: 800px;
  }
 
  .seccionUnoContenedor { 
@@ -193,7 +211,9 @@ ul ul {
     padding: 15px;
 }
 
- /*Comienzo de sección 2*/
+ /*Fin de seccion 1 - Home*/
+
+ /*Comienzo de seccion 2 - Home*/
 
 .seccionDos {
     background-color: #ffffff;
@@ -214,16 +234,15 @@ ul ul {
     grid-template-rows: 50% 50%;
     grid-column-gap: 10px;
     grid-template-areas:
-    "seccion2--card1 seccion2--card2"
+    "seccionDosCardUno seccionDosCardDos"
 }
 
 #seccionDosCardUno {
-    grid-area: seccion2--card1; /*Uso de grid*/
-    
+    grid-area: seccionDosCardUno; /*Uso de grid*/
 }
 
 #seccionDosCardDos {
-    grid-area: seccion2--card2; /*Uso de grid*/
+    grid-area: seccionDosCardDos; /*Uso de grid*/
 }
 
 .seccionDosCards {
@@ -239,70 +258,9 @@ ul ul {
     overflow: hidden;
 }
 
-/*Seccion 2 especial - Pag Sobre mi*/
+/* Fin de seccion 2 - Home*/
 
-.seccion2__contenedorsobreMi {
-    margin: 25px;
-    padding: 0px 15px ;
-}
-
-.seccion2__cardsobreMi {
-    width: 282px;
-    height: 357px;
-    padding: 44px 23px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: #FCF2F2;
-    font-size: 65px;
-    display: inline-block;
-    align-content: center;
-}
-
-.seccion2--arriba {
-    margin: 40px 20px;
-}
-
-.seccion2--abajo {
-    color: #FFF;
-    margin: -100px 20px;
-    background: linear-gradient(180deg, #FF848A, #e82349)
-}
-
-/*Seccion 2 especial - Pag Diseño*/
-
-ol li {
-    text-align: left;
-    display: block;
-    font-size: 15px;
-}
-
-.seccion2__contenedorDiseno {
-    margin: 25px;
-    padding: 0px 15px;
-}
-
-.seccion2__cardDiseno {
-    width: 282px;
-    height: 357px;
-    padding: 44px 23px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: #FCF2F2;
-    font-size: 65px;
-    display: inline-block;
-    overflow: hidden;
-    align-content: center;
-}
-
-.seccion2--arribaDiseno {
-    margin: 40px 20px;
-}
-
-.seccion2--abajoDiseno {
-    margin: -100px 20px;
-}
-
- /*Comienzo de sección 3*/
+/*Comienzo de sección 3 - Home*/
 
 .seccionTres {
     background-color: #F9F9F9;
@@ -310,7 +268,6 @@ ol li {
 
 .seccionTresContenedor {
     padding: 30px;
-    margin: 105px;
     display: grid; /*Uso de grid*/
     justify-content:center;
     grid-template-columns: 30% 30%;
@@ -377,17 +334,145 @@ ol li {
     align-content: center;
 }
 
-/*Seccion 3 especial pantalla Sobre mi */
+/*Fin de seccion 3 - Home*/
 
-.seccion3__contenedorSobreMi {
-    padding: 0px 280px ;
-    height: 650px;
+ /*Comienzo de seccion 4 - Home*/
+
+ .seccionCuatroContenedor {
+    padding-top: 30px;
+    display: grid; /*Uso de grid*/
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "seccionCuatroNotiUno seccionCuatroNotiDos seccionCuatroNotiTres";
+    justify-content: center;
 }
-.seccion3__cardSobreMi {
+
+#seccionCuatroNotiUno {
+   grid-area: seccionCuatroNotiUno;
+}
+
+#seccionCuatroNotiDos {
+   grid-area: seccionCuatroNotiDos;
+}
+
+#seccionCuatroNotiTres {
+   grid-area: seccionCuatroNotiTres;
+}
+
+.seccionCuatroCards {
+   text-align: center;
+   margin: 60px 30px;
+   border-color: #262626;
+   border: 2px;
+   border-radius: 10px;
+   text-align: center;
+   background-color: #F9F9F9;
+   display: inline-block;
+   overflow: hidden;
+   align-content: center;
+}
+
+.seccionCuatroImagen {
+   background-color: #FFF;
+   border-radius: 1px solid black;
+}
+
+/*Fin sección 4 - Home*/
+
+/*Fin Home*/
+
+/*Comienzo Sobre mi*/
+
+/*Seccion 1 siempre es igual a la home*/
+
+#comencemos{
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+/*Comienzo de seccion 2 - Sobre mi*/
+
+.seccionDosSobreMi {
+    background-color: #FFF;
+    height: 700px;
+}
+
+.seccionDosContenedorSobreMi {
+    padding: 30px;
+    margin: 40px;
+    display: grid; /*Uso de grid*/
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-template-areas: 
+    "cardSobreMiUno cardSobreMiDos cardSobreMiTres cardSobreMiCuatro cardSobreMiCinco";
+    justify-content: center;
+}
+
+#cardSobreMiUno {
+    grid-area: cardSobreMiUno;
+    transform: translateY(-20px);
+}
+
+#cardSobreMiDos {
+    grid-area: cardSobreMiDos;
+    color: #FFF;
+    background: linear-gradient(180deg, #FF848A, #e82349);
+    transform: translateY(100px);
+}
+
+#cardSobreMiTres {
+    grid-area: cardSobreMiTres;
+    transform: translateY(-20px);
+}
+
+#cardSobreMiCuatro {
+    grid-area: cardSobreMiCuatro;
+    transform: translateY(70px);
+}
+
+#cardSobreMiCinco {
+    grid-area: cardSobreMiCinco;
+    color: #FFF;
+    background: linear-gradient(180deg, #FF848A, #e82349);
+    transform: translateY(100px);
+}
+
+.seccionDosCardSobreMi {
+    width: 282px;
+    height: 357px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #FCF2F2;
+    font-size: 65px;
+    display: inline-block;
+    align-content: center;
+}
+
+/*Fin de seccion 2 - Sobre Mi*/
+
+/*Comienzo de seccion 3 - Sobre mi */
+
+.seccionTresSobreMi {
+    background-color: #F9F9F9;
+    height: 700px;
+    padding-top: 30px;
+}
+
+.seccionTresContenedorSobreMi {
+    padding: 20px 280px ;
+    height: 650px;
+    display: flex; /*Uso de flex*/
+    flex-direction: row;
+    justify-content: center;
+}
+.seccionTresCardSobreMi {
     width: 343px;
     height: 380px;
     margin: 50px;
-    padding-top: 80px;
+    padding-top: 70px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
@@ -399,62 +484,251 @@ ol li {
     align-content: center;
 }
 
- /*Comienzo de sección 4*/
+/*Fin de seccion 3 - Sobre mi*/
 
- .seccionCuatroContenedor {
-     padding-top: 30px;
-     display: grid; /*Uso de grid*/
-     grid-template-columns: 30% 30% 30%;
-     grid-template-rows: auto;
-     grid-template-areas: 
-     "seccionCuatroNotiUno seccionCuatroNotiDos seccionCuatroNotiTres";
-     justify-content: center;
- }
+/*Comienzo de seccion 4 - Sobre Mi*/
 
-#seccionCuatroNotiUno {
-    grid-area: seccionCuatroNotiUno;
+#seccionCuatroMiCamino {
+    text-align: left;
 }
 
-#seccionCuatroNotiDos {
-    grid-area: seccionCuatroNotiDos;
+.seccionCuatroSobreMi {
+    background-color: #FFF;
 }
 
-#seccionCuatroNotiTres {
-    grid-area: seccionCuatroNotiTres;
+.seccionCuatroContenedorSobreMi {
+    padding-top: 30px;
+    margin: 50px;
+    display: grid; /*Uso de grid*/
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "seccionCuatroTexto seccionCuatroImagen";
+    justify-content: center;
 }
 
- .seccionCuatroCards {
-    text-align: center;
-    margin: 60px 30px;
-    border-color: #262626;
-    border: 2px;
-    border-radius: 10px;
-    text-align: center;
-    background-color: #F9F9F9;
-    display: inline-block;
-    overflow: hidden;
-    align-content: center;
- }
+.seccionCuatroTexto {
+    grid-area: seccionCuatroTexto;
+    max-width: 60%;
+    margin-left: 60px;
+}
 
 .seccionCuatroImagen {
+    grid-area: seccionCuatroImagen;
+}
+
+/*Fin de seccion 4 - Sobre Mi*/
+
+/*Comienzo Portfolio*/
+
+/*Seccion 1 siempre es igual a la home*/
+
+/*Comienzo seccion 2 - Portfolio */
+
+.seccionDiProducto {
+    background-color: #F9F9F9;
+    padding: 30px;
+}
+
+.seccionDiProductoContenedor {
+    padding: 30px;
+    display: grid; /*Uso de grid*/
+    justify-content:center;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+    grid-template-areas:
+    "seccionDiProductoUno seccionDiProductoDos";
+}
+
+#seccionDiProductoUno {
+    grid-area: seccionDiProductoUno;
+}
+
+#seccionDiProductoDos {
+    grid-area: seccionDiProductoDos;
+}
+
+/*Fin seccion 2 - Portfolio */
+
+/*Comienzo seccion 3 - Portfolio */
+
+.seccionDiUxUi {
+    background-color: #F9F9F9;
+    padding: 30px;
+}
+
+.seccionDiUxUiContenedor {
+    padding: 30px;
+    display: grid; /*Uso de grid*/
+    justify-content:center;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+    grid-template-areas:
+    "seccionDiUxUiUno seccionDiUxUiDos";
+}
+
+#seccionDiUxUiUno {
+    grid-area: seccionDiUxUiUno;
+}
+
+#seccionDiUxUiDos {
+    grid-area: seccionDiUxUiDos;
+}
+
+/*Fin seccion 3 - Portfolio */
+
+/*Comienzo Cards genericas seccion 2 y 3 Portfolio*/
+
+.seccionCardsPortfolio a {
+    color: #262626;
+}
+
+.seccionCardsPortfolio a:hover {
+    color: #e82349;
+}
+
+.seccionCardsPortfolio {
+    width: 450px;
+    height: 450px;
+    margin: 50px;
+    padding-top: 180px;
+    padding-left: 80px;
+    padding-right: 60px;
+    border-radius: 10px;
+    text-align: center;
     background-color: #FFF;
-    border-radius: 1px solid black;
+    font-size: 65px;
+    display: inline-block;
+    overflow: hidden;
 }
 
-/* Seccion 4 pantalla Sobre Mi*/
+/*Fin de Cards genericas seccion 2 y 3 Portfolio*/
 
-.seccion4__contenedorSobreMi {
+/*Fin de portfolio*/
+
+/*Comienzo de Seccion 2 generica Diseno*/
+
+ol li {
+    text-align: left;
+    display: block;
+    font-size: 15px;
+}
+
+.seccionDosCardDiseno {
+    width: 282px;
+    height: 357px;
+    padding: 44px 23px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #FCF2F2;
+    font-size: 65px;
+    overflow: hidden;
+}
+
+/*Fin de Seccion 2 generica diseno*/
+
+/* Comienzo de seccion Diseno Producto*/
+
+.seccionDosDisenoProducto {
+    height: 850px;
     background-color: #FFF;
 }
 
-.seccion4__texto {
-    max-width: 50%;
-    display: inline-block;
+.seccionDosContenedorDiProducto {
+    padding: 30px;
+    margin: 60px;
+    display: grid; /*Uso de grid*/
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-template-areas: 
+    "seccionDosTextoProducto seccionDosTextoProducto seccionDosTextoProducto seccionDosTextoProducto"
+    "cardDiProductoUno cardDiProductoDos cardDiProductoTres cardDiProductoCuatro";
+    justify-content: center;
 }
 
-.seccion4__imagen {
-    display: inline-block;
+.seccionDosTextoProducto {
+    grid-area: seccionDosTextoProducto;
 }
+
+#cardDiProductoUno {
+    grid-area: cardDiProductoUno;
+    transform: translateY(-20px);
+}
+
+#cardDiProductoDos {
+    grid-area: cardDiProductoDos;
+    transform: translateY(100px);
+}
+
+#cardDiProductoTres {
+    grid-area: cardDiProductoTres;
+    transform: translateY(-20px);
+}
+
+#cardDiProductoCuatro {
+    grid-area: cardDiProductoCuatro;
+    transform: translateY(70px);
+}
+
+/* Fin de seccion Diseno Producto*/
+
+/* Comienzo de seccion Diseno Ux Ui*/
+
+.seccionDosDisenoUxUi{
+    height: 850px;
+    background-color: #FFF;
+}
+
+.seccionDosContenedorDiUxUi {
+    padding: 30px;
+    margin: 60px;
+    display: grid; /*Uso de grid*/
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-template-areas: 
+    "seccionDosTextoUxUi seccionDosTextoUxUi seccionDosTextoUxUi seccionDosTextoUxUi seccionDosTextoUxUi"
+    "cardDiUxUiUno cardDiUxUiDos cardDiUxUiTres cardDiUxUiCuatro cardDiUxUiCinco";
+    justify-content: center;
+}
+
+.seccionDosTextoUxUi {
+    grid-area: seccionDosTextoUxUi;
+    margin-bottom: 30px;
+}
+
+#cardDiUxUiUno {
+    grid-area: cardDiUxUiUno;
+    transform: translateY(-20px);
+}
+
+#cardDiUxUiDos {
+    grid-area: cardDiUxUiDos;
+    transform: translateY(100px);
+}
+
+#cardDiUxUiTres {
+    grid-area: cardDiUxUiTres;
+    transform: translateY(-20px);
+}
+
+#cardDiUxUiCuatro {
+    grid-area: cardDiUxUiCuatro;
+    transform: translateY(70px);
+}
+
+#cardDiUxUiCinco {
+    grid-area: cardDiUxUiCinco;
+    transform: translateY(-20px);
+}
+
+/* Fin de seccion Diseno Ux Ui*/
+
+
+/*Comienzo de contacto*/
 
 /*Formulario*/
 
@@ -478,8 +752,7 @@ form input{
 	display:inline-block;
 }
 
-
-textarea{
+textarea {
 	width:875px;
 	height:395px;
 	border-radius:10px;
@@ -489,18 +762,6 @@ textarea{
 	display:block;
 }
 
-/*Footer*/
+/*Fin formulario*/
 
-footer {
-    text-align: center;
-    background-image: url("/img/backgroundFooter.png");
-    padding: 80px;
-    justify-content: center;
-}
-
-.seccionFotter {
-    margin: 25px;
-    display: flex; /*Uso de flex*/
-    flex-direction: row;
-    justify-content: center;  
-}
+/*Fin de contacto*/

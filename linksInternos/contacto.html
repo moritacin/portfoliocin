@@ -12,13 +12,17 @@
 
     <!--Menu de navegación-->
 
-    <header class="nav__bar">
+    <header class="navBar">
         <nav>   
-            <ul class="menu__items">
-                <li><a href="../index.html" class="logo">Logo</a></li>
-                <li><a href="sobreMi.html">Sobre mi</a></li>
-                <li>
-                    <a href="misServicios.html">Mis servicios</a>
+            <ul class="menuItems">
+                <li id="logo">
+                    <a href="../index.html"><input type="image" src="../img/logo.svg" type="button" ></a>
+                </li>
+                <li id="sobreMi">
+                    <a href="sobreMi.html" >Sobre mi</a>
+                </li>
+                <li id="misServicios">
+                    <a href="misServicios.html" >Mis servicios</a>
                     <ul>
                         <li>
                             <a href="disenoUxui.html">diseño ux ui</a>
@@ -28,9 +32,15 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contacto.html">Contacto</a></li> 
-                <li><a href="#">ES</a></li> 
+                <li id="portfolio">
+                    <a href="portfolio.html" >Portfolio</a>
+                </li>
+                <li id="contacto">
+                    <a href="contacto.html" >Contacto</a>
+                </li> 
+                <li id="idioma">
+                    <a href="#" >ES</a>
+                </li> 
             </ul>    
         </nav>
     </header>
@@ -41,17 +51,18 @@
 
         <!--Comienzo seccion 1-->
 
-        <section class="seccion1">
-            <div class="seccion1__contenedor">
-                <h1 class="seccion--titleblack">estemos en</h1>
-                <h1 class="seccion--titlepink">contacto</h1>  
-                <p title="contact">
-                    Si necesitas asesoría en tu proyecto o necesitas contactarme para el desarrollo de un proyecto no dudes en escribirme! 
-               </p>
-            </div>
-           <div class="seccion1__imagen">
-                <img src="../img/contacto.png" alt="Foto de chocando manos">
-           </div>
+        <section class="seccionUno">
+            <div class="seccionUnoContenedor">
+                <div class="seccionUnoTexto">
+                    <h1 class="seccionTitleBlack">estemos en<br><span id="seccionTitlePink">contacto</span></h1>  
+                     <p title="contact">
+                        Si necesitas asesoría en tu proyecto o necesitas contactarme para el desarrollo de un proyecto no dudes en escribirme! 
+                     </p>
+                </div>
+                <div class="seccionUnoImagen">
+                        <img src="../img/contacto.png" alt="Foto de chocando manos">
+                </div>
+             </div>
         </section>
 
         <!--Fin seccion 1-->
@@ -93,8 +104,8 @@
 
     <footer>
         <h3>grax por llegar hasta acá</h3>
-        <h3><span class="seccion--titlepink">follow</span><span class="seccion--especial">!</span></h3> 
-        <div class="seccion__fotter">
+        <h3><span class="seccionTitlePink">follow</span><span id="seccionEspecial">!</span></h3>
+        <div class="seccionFooter">
             <a href="https://www.linkedin.com/in/cinthiabmorales/"><input type="image" src="../img/iconolinkedin.svg" type="button"></a>
             <a href="https://www.behance.net/cinthiabmorales"><input type="image" src="../img/iconobehance.svg" type="button"></a>
             <a href="contacto.html"><input type="image" src="../img/iconogmail.svg" type="button"></a>
