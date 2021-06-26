@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <!--Menu de navegación-->
+
+    <header class="nav__bar">
+        <nav>   
+            <ul class="menu__items">
+                <li><a href="../index.html" class="logo">Logo</a></li>
+                <li><a href="sobreMi.html">Sobre mi</a></li>
+                <li>
+                    <a href="misServicios.html">Mis servicios</a>
+                    <ul>
+                        <li>
+                            <a href="disenoUxui.html">diseño ux ui</a>
+                        </li>
+                        <li>
+                            <a href="disenoProducto.html">diseño de producto</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contacto.html">Contacto</a></li> 
+                <li><a href="#">ES</a></li> 
+            </ul>    
+        </nav>
+    </header>
+
+    <!--Fin menu de navegación-->
+
+    <main>
+
+        <!--Comienzo seccion 1-->
+
+        <section class="seccion1">
+            <div class="seccion1__contenedor">
+                <h1 class="seccion--titleblack">estemos en</h1>
+                <h1 class="seccion--titlepink">contacto</h1>  
+                <p title="contact">
+                    Si necesitas asesoría en tu proyecto o necesitas contactarme para el desarrollo de un proyecto no dudes en escribirme! 
+               </p>
+            </div>
+           <div class="seccion1__imagen">
+                <img src="../img/contacto.png" alt="Foto de chocando manos">
+           </div>
+        </section>
+
+        <!--Fin seccion 1-->
+
+        <!-- Comienzo de formulario-->
+
+        <section class="formulario">
+            <form action="enviar.php" method="POST" enctype="multipart/form-data">
+                <h2>contacto!</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="nombre">nombre</label>
+                        </td>
+                        <td>
+                            <label for="email">email</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="nombre" maxlength="500">
+                            <input type="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea name="" id="" cols="30" rows="10">Escribe aqui tu mensaje</textarea>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" name="submit" value="Enviar" class="boton">
+            </form>
+        </section>
+
+        <!--Fin formulario-->
+
+    </main>
+    <!--Comienzo de footer-->
+
+    <footer>
+        <h3>grax por llegar hasta acá</h3>
+        <h3><span class="seccion--titlepink">follow</span><span class="seccion--especial">!</span></h3> 
+        <div class="seccion__fotter">
+            <a href="https://www.linkedin.com/in/cinthiabmorales/"><input type="image" src="../img/iconolinkedin.svg" type="button"></a>
+            <a href="https://www.behance.net/cinthiabmorales"><input type="image" src="../img/iconobehance.svg" type="button"></a>
+            <a href="contacto.html"><input type="image" src="../img/iconogmail.svg" type="button"></a>
+        </div>
+    </footer>
+
+    <!--Fin de footer-->
+</body>
+</html>
