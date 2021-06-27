@@ -6,19 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>Cin Morales</title>
+    <title>Portfolio</title>
 </head>
 <body>
 
     <!--Menu de navegación-->
 
-    <header class="nav__bar">
+    <header class="navBar">
         <nav>   
-            <ul class="menu__items">
-                <li><a href="../index.html" class="logo">Logo</a></li>
-                <li><a href="sobreMi.html">Sobre mi</a></li>
-                <li>
-                    <a href="misServicios.html">Mis servicios</a>
+            <ul class="menuItems">
+                <li id="logo">
+                    <a href="../index.html"><input type="image" src="../img/logo.svg" type="button" ></a>
+                </li>
+                <li id="sobreMi">
+                    <a href="sobreMi.html" >Sobre mi</a>
+                </li>
+                <li id="misServicios">
+                    <a href="misServicios.html" >Mis servicios</a>
                     <ul>
                         <li>
                             <a href="disenoUxui.html">diseño ux ui</a>
@@ -28,9 +32,15 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contacto.html">Contacto</a></li> 
-                <li><a href="#">ES</a></li> 
+                <li id="portfolio">
+                    <a href="portfolio.html" >Portfolio</a>
+                </li>
+                <li id="contacto">
+                    <a href="contacto.html" >Contacto</a>
+                </li> 
+                <li id="idioma">
+                    <a href="#" >ES</a>
+                </li> 
             </ul>    
         </nav>
     </header>
@@ -41,31 +51,33 @@
 
         <!--Comienzo seccion 1-->
 
-        <section class="seccion1">
-            <div class="seccion1__contenedor">
-                <h1 class="seccion--titleblack">mi</h1>
-                <h1 class="seccion--titlepink">portfolio</h1> 
-                <p>
-                    En la siguiente galería encontrarás mi selección de proyectos en los que he trabajado categorizados.
+        <section class="seccionUno">
+            <div class="seccionUnoContenedor">
+                <div class="seccionUnoTexto">
+                    <h1 class="seccionTitleBlack">mi<br><span id="seccionTitlePink">portfolio</span></h1> 
+                     <p>
+                        En la siguiente galería encontrarás mi selección de proyectos en los que he trabajado, categorizados según diseño ux ui - diseño de producto
+                     </p>
+                </div>
+                <div class="seccionUnoImagen">
+                        <img src="../img/proyectos.png" alt="Foto lanzando un proyecto">
+                </div>
             </div>
-           <div class="seccion1__imagen">
-                <img src="../img/proyectos.png" alt="Foto lanzando un proyecto">
-           </div>
         </section>
 
         <!--Fin seccion 1-->
 
-        <!--Comienzo seccion 2A-->
+        <!--Comienzo seccion 2-->
 
-        <section class="seccion3">
+        <section class="seccionDiProducto">
             <h2>diseño de producto</h2>
-            <div class="seccion3__contenedor">
-                <div class="seccion3__cards">
+            <div class="seccionDiProductoContenedor">
+                <div id="seccionDiProductoUno" class="seccionCardsPortfolio">
                     <h3>
                         <a href="justCook.html">Just Cook</a>
                     </h3>
                 </div>
-                <div class="seccion3__cards">
+                <div id="seccionDiProductoDos" class="seccionCardsPortfolio">
                     <h3>
                         <a href="justCook.html">Just Cook</a>
                     </h3>
@@ -73,19 +85,19 @@
             </div>
         </section>
 
-        <!--Fin seccion 2A-->
+        <!--Fin seccion 2-->
 
-        <!--Comienzo seccion 2B-->
+        <!--Comienzo seccion 3-->
 
-        <section class="seccion3">
+        <section class="seccionDiUxUi">
             <h2>diseño ux ui</h2>
-            <div class="seccion3__contenedor">
-                <div class="seccion3__cards">
+            <div class="seccionDiUxUiContenedor">
+                <div id="seccionDiUxUiUno" class="seccionCardsPortfolio">
                     <h3>
                         <a href="banconApp.html">Bancon app</a>
                     </h3>
                 </div>
-                <div class="seccion3__cards">
+                <div id="seccionDiUxUiDos" class="seccionCardsPortfolio">
                     <h3>
                         <a href="plentyApp.html">Plenty app</a>
                     </h3>
@@ -93,7 +105,7 @@
             </div>
         </section>
 
-        <!--Fin seccion 2B-->
+        <!--Fin seccion 3-->
 
     </main>
     
@@ -101,8 +113,8 @@
 
     <footer>
         <h3>grax por llegar hasta acá</h3>
-        <h3><span class="seccion--titlepink">follow</span><span class="seccion--especial">!</span></h3> 
-        <div class="seccion__fotter">
+        <h3><span class="seccionTitlePink">follow</span><span id="seccionEspecial">!</span></h3>
+        <div class="seccionFooter">
             <a href="https://www.linkedin.com/in/cinthiabmorales/"><input type="image" src="../img/iconolinkedin.svg" type="button"></a>
             <a href="https://www.behance.net/cinthiabmorales"><input type="image" src="../img/iconobehance.svg" type="button"></a>
             <a href="contacto.html"><input type="image" src="../img/iconogmail.svg" type="button"></a>
