@@ -24,6 +24,7 @@ h1 {
 
 h2 {
     font-size:70px;
+    font-weight: 600;
     text-align: center;
     color:#FF848A;
 }
@@ -43,80 +44,47 @@ body {
 
 /*Menu de navegacion*/
 
-.navBar {
-    min-height: 120px;   
-}
-
-.navBar a {
+.nav-link {
     color: #e82349;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 24px;
 }
 
-.navBar a:hover {
-    color: #262626;
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: #e82349;
 }
 
-.menuItems {
-    display: grid; /*Uso de grid*/
-    align-content: center;
-    margin-top: 25px;
-    grid-template-columns: 20% auto;
-    grid-template-rows: auto;
-    align-items: center;
-    grid-template-areas:
-    "logo sobreMi misServicios portfolio contacto idioma"
+.navbar-light .navbar-nav .nav-link {
+    color: #c2c0c0;
+}
+
+.navbar-brand {
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+    margin-right: 10rem;
 }
 
 #logo {
-    grid-area: logo;
-    padding-left: 70px;
-    padding-right: 200px;
+    padding: 45px;
 }
 
-#sobreMi {
-    grid-area: sobreMi;
+.nav-item.show .nav-link,.nav-tabs .nav-link.active{
+    color:#495057;
+    background-color:#fff;
+    border-color:#dee2e6 #dee2e6 #fff
 }
 
-#misServicios {
-    grid-area: misServicios;
+.dropdown-menu {
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
 }
 
-#portfolio {
-    grid-area: portfolio;
+.dropdown-item:hover {
+    background-color: #FF848A;
 }
-
-#contacto {
-    grid-area: contacto;
-}
-
-#idioma {
-    grid-area: idioma;
-}
-
-ul li {
-    justify-content: space-between;
-    display: inline-block;
-    list-style: none;
-    padding: 0 15px;
-}
-
-/*Esto es para cuando estoy sobre mis Servicios en Nav Bar*/
-
-ul ul li {
-    display: block;
- }
-
-ul ul {
-    position: absolute;
-    display: none;
- }
-
- ul li:hover ul {
-    display:block;
-}
-
 /*Footer*/
 
 footer {
@@ -176,27 +144,20 @@ footer {
 
  /*Comienzo de seccion 1 - Home*/
 
- .seccionUno {
-     height: 800px;
+ .container {
+     padding: 35px;
  }
 
- .seccionUnoContenedor { 
-    padding: 15px;
-    display: grid; /*Uso de grid*/
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "seccionUnoTexto seccionUnoImagen"
+.container-fluid { 
+    width: 90%;
 }
 
-.seccionUnoTexto{
-    grid-area: seccionUnoTexto; /*Uso de grid*/
-    margin: 70px;
+.container-grey {
+    background-color: #F9F9F9;
 }
 
-.seccionUnoImagen {
-    grid-area: seccionUnoImagen; /*Uso de grid*/
-    margin: 90px;
+.container-white {
+    background-color: #FFFFFF;
 }
 
 #redes {
@@ -215,171 +176,97 @@ footer {
 
  /*Comienzo de seccion 2 - Home*/
 
-.seccionDos {
-    background-color: #ffffff;
-}
-
-.seccionDosCards a {
+ #seccionDosCards a {
     color: #e82349;
+    text-decoration: none;
 }
 
-.seccionDosCards a:hover {
+#seccionDosCards a:hover {
     color: #262626;
+    text-decoration: none;
 }
 
-.seccionDosContenedor {
-    justify-content: center;
-    display: grid; /*Uso de grid*/
-    grid-template-columns: 35% auto;
-    grid-template-rows: 50% 50%;
-    grid-column-gap: 10px;
-    grid-template-areas:
-    "seccionDosCardUno seccionDosCardDos"
-}
-
-#seccionDosCardUno {
-    grid-area: seccionDosCardUno; /*Uso de grid*/
-}
-
-#seccionDosCardDos {
-    grid-area: seccionDosCardDos; /*Uso de grid*/
-}
-
-.seccionDosCards {
-    margin: 20px;
-    width: 450px;
-    height: 450px;
-    margin: 50px;
-    padding:  135px;
+#seccionDosCards a{
+    margin: 15px;
+    height: 30rem;
+    align-items: center;
     border-radius: 10px;
-    text-align: center;
     background-color: #FCF2F2;
-    font-size: 65px;
+    font-size: 45px;
+    font-weight: 600;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 /* Fin de seccion 2 - Home*/
 
 /*Comienzo de sección 3 - Home*/
 
-.seccionTres {
-    background-color: #F9F9F9;
-    height: 1400px;
+.row {
+    flex-wrap: nowrap;
 }
 
-.seccionTresContenedor {
-    padding: 30px;
-    display: grid; /*Uso de grid*/
-    justify-content:center;
-    grid-template-columns: 30% 30%;
-    grid-template-rows: 50% 50%;
-    grid-column-gap: 15px;
-    grid-template-areas:
-    "seccionTresCardUno seccionTresCardDos"
-    "seccionTresCardTres seccionTresCardTres"
-    "seccionCuatroBoton seccionCuatroBoton";
+/* Fin de seccion 2 - Home*/
 
-}
+/*Comienzo de sección 3 - Home*/
 
-#seccionTresCardUno{
-    grid-area: seccionTresCardUno;
-}
-
-#seccionTresCardDos{
-    grid-area: seccionTresCardDos;
-}
-
-#seccionTresCardTres {
-    grid-area: seccionTresCardTres;
-}
-
-#seccionCuatroBoton {
-    grid-area: seccionCuatroBoton;
-}
-
-.seccionTresContenedor a {
+#seccionTresCardChica a {
     color: #262626;
+    text-decoration: none;
 }
 
-.seccionTresContenedor a:hover {
+#seccionTresCardChica a:hover {
     color: #e82349;
+    text-decoration: none;
 }
 
-.seccionTresCardChica {
-    width: 450px;
-    height: 450px;
-    margin: 50px;
-    padding-top: 130px;
-    padding-left: 80px;
-    padding-right: 60px;
+#seccionTresCardGrande a {
+    color: #262626;
+    text-decoration: none;
+}
+
+#seccionTresCardGrande a:hover {
+    color: #e82349;
+    text-decoration: none;
+}
+
+#seccionTresCardChica a {
+    margin: 15px;
+    height: 30rem;
+    align-items: center;
     border-radius: 10px;
     text-align: center;
     background-color: #FFF;
-    font-size: 65px;
-    display: inline-block;
-    overflow: hidden;
+    font-size: 45px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
 }
 
-.seccionTresCardGrande {
-    width: 960px;
-    height: 450px;
-    margin: 50px;
-    padding-top: 130px;
-    padding-right: 60px;
+#seccionTresCardGrande a {
+    margin: 15px;
+    height: 30rem;
+    align-items: center;
     border-radius: 10px;
     text-align: center;
     background-color: #FFF;
-    font-size: 65px;
-    display: inline-block;
-    overflow: hidden;
-    align-content: center;
+    font-size: 45px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
 }
 
 /*Fin de seccion 3 - Home*/
 
  /*Comienzo de seccion 4 - Home*/
 
- .seccionCuatroContenedor {
-    padding-top: 30px;
-    display: grid; /*Uso de grid*/
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "seccionCuatroNotiUno seccionCuatroNotiDos seccionCuatroNotiTres";
-    justify-content: center;
-}
-
-#seccionCuatroNotiUno {
-   grid-area: seccionCuatroNotiUno;
-}
-
-#seccionCuatroNotiDos {
-   grid-area: seccionCuatroNotiDos;
-}
-
-#seccionCuatroNotiTres {
-   grid-area: seccionCuatroNotiTres;
-}
-
-.seccionCuatroCards {
-   text-align: center;
-   margin: 60px 30px;
-   border-color: #262626;
-   border: 2px;
-   border-radius: 10px;
-   text-align: center;
-   background-color: #F9F9F9;
-   display: inline-block;
-   overflow: hidden;
-   align-content: center;
-}
-
-.seccionCuatroImagen {
-   background-color: #FFF;
-   border-radius: 1px solid black;
-}
 
 /*Fin sección 4 - Home*/
+
+.card {
+    margin: 45px;
+}
 
 /*Fin Home*/
 

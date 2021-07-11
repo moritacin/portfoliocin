@@ -4,46 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cin Morales</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>Cin Morales</title>
+    
 </head>
 <body>
 
     <!--Menu de navegación-->
 
-    <header class="navBar">
-        <nav>   
-            <ul class="menuItems">
-                <li id="logo">
-                    <a href="index.html"><input type="image" src="img/logo.svg" type="button" ></a>
+    <header class="container-grey">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.svg" alt="logocin" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">home <span class="sr-only">(current)</span></a>
                 </li>
-                <li id="sobreMi">
-                    <a href="linksInternos/sobreMi.html" >Sobre mi</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="linksInternos/sobreMi.html">sobre mi</a>
                 </li>
-                <li id="misServicios">
-                    <a href="linksInternos/misServicios.html" >Mis servicios</a>
-                    <ul>
-                        <li>
-                            <a href="linksInternos/disenoUxUi.html">diseño ux ui</a>
-                        </li>
-                        <li>
-                            <a href="linksInternos/disenoProducto.html">diseño de producto</a>
-                        </li>
-                    </ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="linksInternos/misServicios.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      mis servicios
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="linksInternos/disenoUxUi.html">diseño ux ui</a>
+                      <a class="dropdown-item" href="linksInternos/disenoProducto.html">diseño de producto</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="linksInternos/portfolio.html">portfolio</a>
                 </li>
-                <li id="portfolio">
-                    <a href="linksInternos/portfolio.html" >Portfolio</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="linksInternos/contacto.html">contacto</a>
                 </li>
-                <li id="contacto">
-                    <a href="linksInternos/contacto.html" >Contacto</a>
-                </li> 
-                <li id="idioma">
-                    <a href="#" >ES</a>
-                </li> 
-            </ul>    
-        </nav>
+              </ul>
+            </div>
+          </nav>
     </header>
 
     <!--Fin menu de navegación-->
@@ -52,53 +57,57 @@
 
         <!--Comienzo seccion 1-->
 
-        <section class="seccionUno">
-            <div class="seccionUnoContenedor">
-                <div class="seccionUnoTexto">
-                    <h1 id="seccionTitleBlack">
-                        hola<span id="seccionEspecial">,</span> soy<br><span id="seccionTitlePink">Cin Morales</span><span ID="seccionEspecial">.</span>
-                    </h1>    
-                    <p title="Acerca de mi">
-                        Hola! 🙋‍♀️ Soy Cinthia, Diseñadora Industrial y Diseñadora UX UI. 🙌🏼
-                        <br>
-                        <br>
-                        Me recibí de Diseñadora Industrial en el año 2018 y desde entonces continué mi formación en el Diseño de Experiencia de Usuario. 👩🏻‍🎓👩🏻‍💻
-                        <br>
-                        <br>
-                        Me apasiona diseñar, dibujar, hacer maquetas y prototipos. Diseñar es para mí encontrar soluciones que mejoren la calidad de vida de una persona, ya sea a través de un producto o de un servicio. 💡
-                        <br>
-                        <br>
-                        Soy muy curiosa. Me gusta aprender herramientas nuevas que me ayuden en mi trabajo. 🎨💻📷📖✏📐✂
-                   </p>
-                   <a href="linksInternos/sobreMi.html" class="boton">Leer más</a>
-                </div>
-                <div class="seccionUnoImagen">
-                    <img src="img/fotoCin1.png" alt="Foto de Cin">
-                    <div id="redes"> 
-                        <a href="https://www.linkedin.com/in/cinthiabmorales/" target="_blank"><input type="image" src="img/iconolinkedin.svg" type="button"></a>
-                        <a href="https://www.behance.net/cinthiabmorales" target="_blank"><input type="image" src="img/iconobehance.svg" type="button"></a>
-                        <a href="linksInternos/contacto.html" target="_blank"><input type="image" src="img/iconogmail.svg" type="button"></a>
+        <section class="container-grey">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h1 id="seccionTitleBlack">
+                            hola<span id="seccionEspecial">,</span> soy<br><span id="seccionTitlePink">Cin Morales</span><span ID="seccionEspecial">.</span>
+                        </h1>    
+                        <p title="Acerca de mi">
+                            Hola! 🙋‍♀️ Soy Cinthia, Diseñadora Industrial y Diseñadora UX UI. 🙌🏼
+                            <br>
+                            <br>
+                            Me recibí de Diseñadora Industrial en el año 2018 y desde entonces continué mi formación en el Diseño de Experiencia de Usuario. 👩🏻‍🎓👩🏻‍💻
+                            <br>
+                            <br>
+                            Me apasiona diseñar, dibujar, hacer maquetas y prototipos. Diseñar es para mí encontrar soluciones que mejoren la calidad de vida de una persona, ya sea a través de un producto o de un servicio. 💡
+                            <br>
+                            <br>
+                            Soy muy curiosa. Me gusta aprender herramientas nuevas que me ayuden en mi trabajo. 🎨💻📷📖✏📐✂
+                        </p>
+                        <a href="linksInternos/sobreMi.html" class="boton">Leer más</a>
                     </div>
-               </div>
+                    <div class="col-sm-12 col-md-6">
+                        <img src="img/fotoCin1.png" alt="Foto de Cin">
+                        <div id="redes"> 
+                            <a href="https://www.linkedin.com/in/cinthiabmorales/" target="_blank"><input type="image" src="img/iconolinkedin.svg" type="button"></a>
+                            <a href="https://www.behance.net/cinthiabmorales" target="_blank"><input type="image" src="img/iconobehance.svg" type="button"></a>
+                            <a href="linksInternos/contacto.html" target="_blank"><input type="image" src="img/iconogmail.svg" type="button"></a>
+                        </div>
+                </div>
             </div>
+        </div>
         </section>
 
         <!--Fin seccion 1-->
 
         <!--Comienzo seccion 2-->
 
-        <section class="seccionDos">
+        <section class="container-white">
             <h2>mis servicios</h2>
-            <div class="seccionDosContenedor">
-                <div id="seccionDosCardUno" class="seccionDosCards">
-                    <h3>
-                        <a href="linksInternos/disenoUxUi.html">diseño ux · ui</a>
-                    </h3>
-                </div>
-                <div id="seccionDosCardDos" class="seccionDosCards">
-                    <h3>
-                        <a href="linksInternos/disenoProducto.html">diseño industrial</a>
-                    </h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6" id="seccionDosCards">
+                        <h3>
+                            <a href="linksInternos/disenoUxUi.html" id="text-align">diseño ux · ui</a>
+                        </h3>
+                    </div>
+                    <div class="col-sm-12 col-md-6" id="seccionDosCards">
+                        <h3>
+                            <a href="linksInternos/disenoProducto.html">diseño industrial</a>
+                        </h3>
+                    </div>
                 </div>
             </div>
         </section>
@@ -107,28 +116,33 @@
 
         <!--Comienzo seccion 3-->
 
-        <section class="seccionTres">
+        <section class="container-grey">
             <h2>proyectos destacados</h2>
-            <div class="seccionTresContenedor">
-                <div id="seccionTresCardUno" class="seccionTresCardChica">
-                    <h3>
-                        <a href="linksInternos/banconApp.html">Bancon app</a>
-                    </h3>
+            <div class="container">
+                <div class="row">
+                    <div id="seccionTresCardChica" class="col-sm-12 col-md-6">
+                        <h3>
+                            <a href="linksInternos/banconApp.html">Bancon app</a>
+                        </h3>
+                    </div>
+                    <div id="seccionTresCardChica" class="col-sm-12 col-md-6">
+                        <h3>
+                            <a href="linksInternos/plentyApp.html">Plenty app</a>
+                        </h3>
+                    </div>
                 </div>
-                <div id="seccionTresCardDos" class="seccionTresCardChica">
-                    <h3>
-                        <a href="linksInternos/plentyApp.html">Plenty app</a>
-                    </h3>
+                <div class="row">
+                    <div id="seccionTresCardGrande" class="col-sm-12 col-md-12">
+                        <h3>
+                            <a href="linksInternos/justCook.html">Just Cook!</a>
+                        </h3>
+                    </div>
                 </div>
-                <div id="seccionTresCardTres" class="seccionTresCardGrande">
-                    <h3>
-                        <a href="linksInternos/justCook.html">Just Cook!</a>
-                    </h3>
+                <div class="row">
+                    <div id="seccionCuatroBoton" class="col-sm-12 col-md-12">
+                        <a href="linksInternos/portfolio.html" class="boton">Ver más proyectos</a>
+                    </div>
                 </div>
-                <div id="seccionCuatroBoton">
-                    <a href="linksInternos/portfolio.html" class="boton">Ver más proyectos</a>
-                </div>
-
             </div>
         </section>
 
@@ -136,25 +150,33 @@
 
         <!--Comienzo seccion 4-->
 
-        <section class="seccionCuatro">
+        <section class="container-white">
             <h2>ultimos posts</h2>
-                <div class="seccionCuatroContenedor">
-                    <div id="seccionCuatroNotiUno"class="seccionCuatroCards">
-                        <img src="img/noticia1.jpg" alt="Noticia1" class="seccionCuatroImagen">
-                        <h3>Nota 1</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum explicabo ea sunt laboriosam excepturi iste consequuntur magni! Delectus distinctio odit, provident eos tempore unde vero commodi omnis iste ullam eligendi?</p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="card" style="width: 60rem;">
+                        <img src="img/noticia1.jpg" class="card-img-top seccionCuatroCards" alt="...">
+                        <div class="card-body">
+                            <h3>Nota 1</h3>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
-                    <div id="seccionCuatroNotiDos" class="seccionCuatroCards">
-                        <img src="img/noticia2.jpg" alt="Noticia2" class="seccionCuatroImagen">
-                        <h3>Nota 1</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum explicabo ea sunt laboriosam excepturi iste consequuntur magni! Delectus distinctio odit, provident eos tempore unde vero commodi omnis iste ullam eligendi?</p>
+                    <div class="card" style="width: 60rem;">
+                        <img src="img/noticia2.jpg" class="card-img-top seccionCuatroCards" alt="...">
+                        <div class="card-body">
+                            <h3>Nota 2</h3>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
-                    <div id="seccionCuatroNotiTres" class="seccionCuatroCards">
-                        <img src="img/noticia3.jpg" alt="Noticia3" class="seccionCuatroImagen">
-                        <h3>Nota 1</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum explicabo ea sunt laboriosam excepturi iste consequuntur magni! Delectus distinctio odit, provident eos tempore unde vero commodi omnis iste ullam eligendi?</p>
+                    <div class="card" style="width: 60rem;">
+                        <img src="img/noticia3.jpg" class="card-img-top seccionCuatroCards" alt="...">
+                        <div class="card-body">
+                            <h3>Nota 3</h3>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
+            </div>
         </section>
 
         <!--Fin seccion 4-->
@@ -174,6 +196,11 @@
     </footer>
 
     <!--Fin de footer-->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
