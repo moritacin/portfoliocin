@@ -7,9 +7,8 @@
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
-    padding: 15px;
     line-height: 1.5;
 }
 
@@ -18,29 +17,64 @@ a {
 }
 
 h1 {
-    font-size: 82px;
+    font-size: 60px;
     font-weight: 800;
 }
 
 h2 {
-    font-size:70px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 800;
     text-align: center;
     color:#FF848A;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#align-left {
+    text-align: left;
 }
 
 h3 {
-    font-size: 48px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
 }
 
 h4{
-    font-size: 36px;
+    font-size: 32px;
     padding: 10px;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
  }
+
+ ul li {
+     list-style-type: none;
+ }
+
+/*Contenedores de secciones*/
+
+.container-grey {
+    background-color: #F9F9F9;
+}
+
+.container-white {
+    background-color: #FFFFFF;
+}
+
+.container-long {
+    height: 580px;
+    padding: 35px;
+}
+
+ .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1520px;
+}
+
+.container-especial {
+    max-width: 1120px;
+}
 
 /*Menu de navegacion*/
 
@@ -66,7 +100,7 @@ body {
 }
 
 #logo {
-    padding: 45px;
+    padding: 40px;
 }
 
 .nav-item.show .nav-link,.nav-tabs .nav-link.active{
@@ -85,30 +119,26 @@ body {
 .dropdown-item:hover {
     background-color: #FF848A;
 }
+
 /*Footer*/
 
-footer {
+.footer {
+    padding-top: 20px;
     text-align: center;
     background-color: #FCF2F2;
-    padding: 80px;
-    justify-content: center;
+    padding: 1rem;
 }
 
-.seccionFooter {
-    margin: 25px;
-    display: flex; /*Uso de flex*/
-    flex-direction: row;
-    justify-content: center;  
+ul li {
+    margin-left: 5px;
 }
 
  /*Botón genérico*/
 
 .boton {
-    margin: 15px;
     border: none;
     width: 298px;
     height: 60px;
-    padding: 10px 0px;
     color: #262626;
     border-radius: 20px;
     text-decoration: none;
@@ -123,7 +153,9 @@ footer {
 }
 
 .boton:hover {
-    background-color:#ADFFF0;
+    background-color: #e82349;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 /*Predeterminados colores*/
@@ -140,25 +172,7 @@ footer {
     color: #FF848A;
 }
 
- /*Comienzo Home*/
-
- /*Comienzo de seccion 1 - Home*/
-
- .container {
-     padding: 35px;
- }
-
-.container-fluid { 
-    width: 90%;
-}
-
-.container-grey {
-    background-color: #F9F9F9;
-}
-
-.container-white {
-    background-color: #FFFFFF;
-}
+/*Redes*/
 
 #redes {
     margin: 55px;
@@ -172,23 +186,22 @@ footer {
     padding: 15px;
 }
 
- /*Fin de seccion 1 - Home*/
+ /*Cards cuadrada rosa*/
 
- /*Comienzo de seccion 2 - Home*/
-
- #seccionDosCards a {
+ #cardPinkBig a {
     color: #e82349;
     text-decoration: none;
 }
 
-#seccionDosCards a:hover {
+#cardPinkBig a:hover {
     color: #262626;
     text-decoration: none;
 }
 
-#seccionDosCards a{
-    margin: 15px;
+#cardPinkBig a{
+    margin: 45px 30px;
     height: 30rem;
+    text-align: center;
     align-items: center;
     border-radius: 10px;
     background-color: #FCF2F2;
@@ -199,39 +212,29 @@ footer {
     justify-content: center;
 }
 
-/* Fin de seccion 2 - Home*/
+/*Cards cuadrada proyectos*/
 
-/*Comienzo de sección 3 - Home*/
-
-.row {
-    flex-wrap: nowrap;
-}
-
-/* Fin de seccion 2 - Home*/
-
-/*Comienzo de sección 3 - Home*/
-
-#seccionTresCardChica a {
+#cardChica a {
     color: #262626;
     text-decoration: none;
 }
 
-#seccionTresCardChica a:hover {
+#cardChica a:hover {
     color: #e82349;
     text-decoration: none;
 }
 
-#seccionTresCardGrande a {
+#cardGrande a {
     color: #262626;
     text-decoration: none;
 }
 
-#seccionTresCardGrande a:hover {
+#cardGrande a:hover {
     color: #e82349;
     text-decoration: none;
 }
 
-#seccionTresCardChica a {
+#cardChica a {
     margin: 15px;
     height: 30rem;
     align-items: center;
@@ -244,7 +247,7 @@ footer {
     justify-content: center;
 }
 
-#seccionTresCardGrande a {
+#cardGrande a {
     margin: 15px;
     height: 30rem;
     align-items: center;
@@ -257,244 +260,53 @@ footer {
     justify-content: center;
 }
 
-/*Fin de seccion 3 - Home*/
+/*Cards Colours*/
 
- /*Comienzo de seccion 4 - Home*/
-
-
-/*Fin sección 4 - Home*/
-
-.card {
-    margin: 45px;
-}
-
-/*Fin Home*/
-
-/*Comienzo Sobre mi*/
-
-/*Seccion 1 siempre es igual a la home*/
-
-#comencemos{
-    margin-top: 50px;
-    padding-top: 50px;
-}
-
-/*Comienzo de seccion 2 - Sobre mi*/
-
-.seccionDosSobreMi {
-    background-color: #FFF;
-    height: 700px;
-}
-
-.seccionDosContenedorSobreMi {
-    padding: 30px;
-    margin: 40px;
-    display: grid; /*Uso de grid*/
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-column-gap: 20px;
-    grid-template-areas: 
-    "cardSobreMiUno cardSobreMiDos cardSobreMiTres cardSobreMiCuatro cardSobreMiCinco";
-    justify-content: center;
-}
-
-#cardSobreMiUno {
-    grid-area: cardSobreMiUno;
+#cardNegative {
     transform: translateY(-20px);
 }
 
-#cardSobreMiDos {
-    grid-area: cardSobreMiDos;
-    color: #FFF;
-    background: linear-gradient(180deg, #FF848A, #e82349);
-    transform: translateY(100px);
-}
-
-#cardSobreMiTres {
-    grid-area: cardSobreMiTres;
-    transform: translateY(-20px);
-}
-
-#cardSobreMiCuatro {
-    grid-area: cardSobreMiCuatro;
+#cardPositive {
     transform: translateY(70px);
 }
 
-#cardSobreMiCinco {
-    grid-area: cardSobreMiCinco;
-    color: #FFF;
-    background: linear-gradient(180deg, #FF848A, #e82349);
+#cardMiddle {
     transform: translateY(100px);
 }
 
-.seccionDosCardSobreMi {
-    width: 282px;
-    height: 357px;
-    padding: 25px;
+.cardGradient {
+    border-radius: 20px;
+    color: #FFF;
+    background: linear-gradient(180deg, #FF848A, #e82349);
+    font-size: 25px;
+    display: inline-block;
+    align-content: center;
+}
+
+.cardPink {
     border-radius: 20px;
     text-align: center;
     background-color: #FCF2F2;
-    font-size: 65px;
+    font-size: 25px;
     display: inline-block;
     align-content: center;
 }
 
-/*Fin de seccion 2 - Sobre Mi*/
+/*Cards con ícono */
 
-/*Comienzo de seccion 3 - Sobre mi */
-
-.seccionTresSobreMi {
-    background-color: #F9F9F9;
-    height: 700px;
-    padding-top: 30px;
-}
-
-.seccionTresContenedorSobreMi {
-    padding: 20px 280px ;
-    height: 650px;
-    display: flex; /*Uso de flex*/
-    flex-direction: row;
-    justify-content: center;
-}
-.seccionTresCardSobreMi {
-    width: 343px;
-    height: 380px;
-    margin: 50px;
+.cardIcon {
+    width: 20rem;
+    height: 20rem;
     padding-top: 70px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
     text-align: center;
     background-color: #FFF;
     font-size: 65px;
-    display: inline-block;
-    overflow: hidden;
-    align-content: center;
+
 }
-
-/*Fin de seccion 3 - Sobre mi*/
-
-/*Comienzo de seccion 4 - Sobre Mi*/
-
-#seccionCuatroMiCamino {
-    text-align: left;
-}
-
-.seccionCuatroSobreMi {
-    background-color: #FFF;
-}
-
-.seccionCuatroContenedorSobreMi {
-    padding-top: 30px;
-    margin: 50px;
-    display: grid; /*Uso de grid*/
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "seccionCuatroTexto seccionCuatroImagen";
-    justify-content: center;
-}
-
-.seccionCuatroTexto {
-    grid-area: seccionCuatroTexto;
-    max-width: 60%;
-    margin-left: 60px;
-}
-
-.seccionCuatroImagen {
-    grid-area: seccionCuatroImagen;
-}
-
-/*Fin de seccion 4 - Sobre Mi*/
-
-/*Comienzo Portfolio*/
-
-/*Seccion 1 siempre es igual a la home*/
-
-/*Comienzo seccion 2 - Portfolio */
-
-.seccionDiProducto {
-    background-color: #F9F9F9;
-    padding: 30px;
-}
-
-.seccionDiProductoContenedor {
-    padding: 30px;
-    display: grid; /*Uso de grid*/
-    justify-content:center;
-    grid-template-columns: 30% 30%;
-    grid-template-rows: auto;
-    grid-column-gap: 15px;
-    grid-template-areas:
-    "seccionDiProductoUno seccionDiProductoDos";
-}
-
-#seccionDiProductoUno {
-    grid-area: seccionDiProductoUno;
-}
-
-#seccionDiProductoDos {
-    grid-area: seccionDiProductoDos;
-}
-
-/*Fin seccion 2 - Portfolio */
-
-/*Comienzo seccion 3 - Portfolio */
-
-.seccionDiUxUi {
-    background-color: #F9F9F9;
-    padding: 30px;
-}
-
-.seccionDiUxUiContenedor {
-    padding: 30px;
-    display: grid; /*Uso de grid*/
-    justify-content:center;
-    grid-template-columns: 30% 30%;
-    grid-template-rows: auto;
-    grid-column-gap: 15px;
-    grid-template-areas:
-    "seccionDiUxUiUno seccionDiUxUiDos";
-}
-
-#seccionDiUxUiUno {
-    grid-area: seccionDiUxUiUno;
-}
-
-#seccionDiUxUiDos {
-    grid-area: seccionDiUxUiDos;
-}
-
-/*Fin seccion 3 - Portfolio */
-
-/*Comienzo Cards genericas seccion 2 y 3 Portfolio*/
-
-.seccionCardsPortfolio a {
-    color: #262626;
-}
-
-.seccionCardsPortfolio a:hover {
-    color: #e82349;
-}
-
-.seccionCardsPortfolio {
-    width: 450px;
-    height: 450px;
-    margin: 50px;
-    padding-top: 180px;
-    padding-left: 80px;
-    padding-right: 60px;
-    border-radius: 10px;
-    text-align: center;
-    background-color: #FFF;
-    font-size: 65px;
-    display: inline-block;
-    overflow: hidden;
-}
-
-/*Fin de Cards genericas seccion 2 y 3 Portfolio*/
-
-/*Fin de portfolio*/
 
 /*Comienzo de Seccion 2 generica Diseno*/
 
@@ -504,62 +316,12 @@ ol li {
     font-size: 15px;
 }
 
-.seccionDosCardDiseno {
-    width: 282px;
-    height: 357px;
-    padding: 44px 23px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: #FCF2F2;
-    font-size: 65px;
-    overflow: hidden;
-}
+
 
 /*Fin de Seccion 2 generica diseno*/
 
 /* Comienzo de seccion Diseno Producto*/
 
-.seccionDosDisenoProducto {
-    height: 850px;
-    background-color: #FFF;
-}
-
-.seccionDosContenedorDiProducto {
-    padding: 30px;
-    margin: 60px;
-    display: grid; /*Uso de grid*/
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-column-gap: 20px;
-    grid-template-areas: 
-    "seccionDosTextoProducto seccionDosTextoProducto seccionDosTextoProducto seccionDosTextoProducto"
-    "cardDiProductoUno cardDiProductoDos cardDiProductoTres cardDiProductoCuatro";
-    justify-content: center;
-}
-
-.seccionDosTextoProducto {
-    grid-area: seccionDosTextoProducto;
-}
-
-#cardDiProductoUno {
-    grid-area: cardDiProductoUno;
-    transform: translateY(-20px);
-}
-
-#cardDiProductoDos {
-    grid-area: cardDiProductoDos;
-    transform: translateY(100px);
-}
-
-#cardDiProductoTres {
-    grid-area: cardDiProductoTres;
-    transform: translateY(-20px);
-}
-
-#cardDiProductoCuatro {
-    grid-area: cardDiProductoCuatro;
-    transform: translateY(70px);
-}
 
 /* Fin de seccion Diseno Producto*/
 
@@ -722,5 +484,3 @@ label {
     font-size: 24px;
 }
 /*Fin formulario*/
-
-/*Fin de contacto*/
