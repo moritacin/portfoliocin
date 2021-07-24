@@ -1,0 +1,98 @@
+/*Formulario*/
+.formulario {
+    background-color: #F9F9F9;
+    display: grid;
+    justify-content: center;
+    grid-template-areas:"";
+
+}
+
+.formularioContenedor {
+    margin: 50px;
+    display: grid; /*Uso de grid*/
+    grid-template-columns: auto;
+    grid-column-gap: 10px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "formularioContacto formularioContacto"
+    "formularioInput formularioInput"
+    "formularioTextArea formularioTextArea";
+    justify-content: center;
+}
+
+.formularioContacto {
+    grid-area: formularioContacto;
+}
+
+.formularioInput {
+    grid-area: formularioInput;
+}
+
+.formularioTextArea {
+    grid-area: formularioTextArea;
+    margin-top: 25px;
+}
+
+.formularioLabel {
+    display: grid; /*Uso de grid*/
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-template-areas: "labelUno labelDos";
+    
+}
+
+#labelUno {
+    grid-area: labelUno;
+    width:424px;
+    font-weight: 600px;
+}
+
+#labelDos {
+    grid-area: labelDos;
+    width:424px;
+}
+
+.formularioInputGrid {
+    display: grid; /*Uso de grid*/
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-template-areas: "formularioInputUno formularioInputDos";
+    justify-content: center;
+}
+
+#formularioInputUno {
+    grid-area: formularioInputUno;
+}
+
+#formularioInputDos {
+    grid-area: formularioInputDos;
+}
+
+.formularioTd {
+    width:424px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 10px;
+	font-weight:bold;
+}
+
+textarea {
+	width:875px;
+	height:395px;
+	border-radius:10px;
+	background-color:#fff;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+    padding: 25px;
+    color: #565656;
+    font-family:'Montserrat', sans-serif;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}

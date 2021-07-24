@@ -1,0 +1,22 @@
+/*Container*/
+
+.container-grey {
+    background-color: $gris-claro;
+}
+
+.container-white {
+    background-color: $blanco;
+}
+
+.container-long {
+    height: 580px;
+    padding: 35px;
+}
+
+ .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1520px;
+}
+
+.container-especial {
+    max-width: 1120px;
+}

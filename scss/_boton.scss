@@ -1,0 +1,23 @@
+/*Boton*/
+
+.boton {
+    border: none;
+    width: 298px;
+    height: 48px;
+    color: $negro;
+    border-radius: 10px;
+    text-decoration: none;
+    @extend %inline-flex;
+    background: $aqua;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+    &:hover {
+        background-color: lighten($aqua, 10%);
+        text-decoration: none;
+        color: $negro;
+    }
+}
+
+

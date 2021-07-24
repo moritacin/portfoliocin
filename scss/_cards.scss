@@ -1,0 +1,67 @@
+/*Cards tipologías*/
+
+/*Cards rosa*/
+.card-rosa h3 { 
+    @extend %card;
+    @extend %flex;
+    background: $rosa-claro;
+    margin-bottom: 40px;
+    color: $fucsia;
+    height: 30rem;
+
+    &:hover {
+        color: $blanco;
+        background: $gradiente
+
+    }
+}
+
+/*Cards blanca*/
+.card-blanca img { 
+    @extend %card;
+    @extend %flex;
+
+    &:hover {
+        filter: brightness(50%);
+    }
+}
+
+/*Cards transform*/
+.card-transf-gradiente {
+    @extend %card-transform;
+    color: $blanco;
+    background: $gradiente;
+
+}
+
+.card-transf-rosa {
+    @extend %card-transform;
+    color: $negro;
+    background-color: $rosa-claro;
+}
+
+/*Card position*/
+#card-negative {
+    @include prefijos(translateY(-20px));
+}
+
+#card-positive {
+    @include prefijos(translateY(70px));
+}
+
+#card-middle {
+    @include prefijos(translateY(100px));
+}
+
+/*Cards con ícono*/
+
+.cardIcon {
+    padding: 45px 10px;
+    border-radius: 10px;
+    text-align: center;
+    background: $blanco;
+    height: 18rem;
+    margin-bottom: 25px;
+}
+
+
