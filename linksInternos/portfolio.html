@@ -14,41 +14,31 @@
 
     <!--Menu de navegación-->
 
-    <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/logo.svg" alt="logocin" width="80" height="80" id="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html ">home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="sobreMi.html">sobre mi</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="misServicios.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    mis servicios
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="disenoUxUi.html">diseño ux ui</a>
-                    <a class="dropdown-item" href="disenoProducto.html">diseño de producto</a>
-                  </div>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="portfolio.html">portfolio<span class="sr-only">(current)</span></a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">contacto</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+    <header class="container-white">
+        <div class="container container-especial">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo.svg" alt="logocin" width="80" height="80" id="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobreMi.html">sobre mi</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="portfolio.html">portfolio<span class="sr-only">(current)</span></a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
     </header>
 
     <!--Fin menu de navegación-->
@@ -58,12 +48,18 @@
         <!--Comienzo seccion 1-->
 
         <section class="container-white">
-            <div class="container">
+            <div class="container container-especial">
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
-                        <h1 class="seccionTitleBlack">mi<br><span id="seccionTitlePink">portfolio</span></h1> 
+                        <h1 id="titulo-negro">mi <span id="titulo-fucsia">portfolio</span></h1> 
                          <p>
-                            En la siguiente galería encontrarás mi selección de proyectos en los que he trabajado, categorizados según diseño ux ui - diseño de producto
+                            En mis años de experiencia he desarrollado proyectos de diseño <span id="titulo-fucsia">ux · ui </span> y diseño de <span id="titulo-fucsia">producto</span>.
+                            <br>
+                            <br>
+                             Amo diseñar. Soy detallista nivel <span id="titulo-rosa"> pixel perfect</span> en cualquier proyecto que encare. 
+                            <br>
+                            <br>
+                            Me destaco en ui kit y visualización de producto 🎨  
                          </p>
                     </div>
                     <div class="col-sm-12 col-md-6">
@@ -81,18 +77,34 @@
             <h2>diseño de producto</h2>
             <div class="container container-especial">
                 <div class="row">
-                    <div id="cardChica" class="col-sm-12 col-md-6">
-                        <h3>
-                            <a href="justCook.html">Just Cook</a>
-                        </h3>
+                    <div class="col-sm-12 col-md-6 card-blanca img-fluid">
+                        <img src="../img/just-cook.png" class="img-fluid" alt="proyecto bancon">
+                        <!--<div class="card-img-overlay">
+                            <a href="linksInternos/banconApp.html">Just Cook</a>
+                        </div>   -->        
                     </div>
-                    <div id="cardChica" class="col-sm-12 col-md-6">
-                        <h3>
-                            <a href="justCook.html">Just Cook</a>
-                        </h3>
+                    <div class="col-sm-12 col-md-6 card-blanca img-fluid">
+                        <img src="../img/lamp.png" class="img-fluid" alt="proyecto cuidarte">
+                        <!--<div class="card-img-overlay">
+                            <a href="linksInternos/plentyApp.html">Lampara</a>
+                        </div> -->
                     </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 card-blanca img-fluid">
+                        <img src="../img/glass-house.png" class="img-fluid" alt="proyecto bancon">
+                        <!--<div class="card-img-overlay">
+                            <a href="linksInternos/banconApp.html">Just Cook</a>
+                        </div>   -->        
+                    </div>
+                    <div class="col-sm-12 col-md-6 card-blanca img-fluid">
+                        <img src="../img/bi-park.png" class="img-fluid" alt="proyecto cuidarte">
+                        <!--<div class="card-img-overlay">
+                            <a href="linksInternos/plentyApp.html">Lampara</a>
+                        </div> -->
+                    </div>
+                </div>
+                </div>  
         </section>
 
         <!--Fin seccion 2-->
@@ -103,15 +115,29 @@
             <h2>diseño ux ui</h2>
             <div class="container container-especial">
                 <div class="row">
-                    <div id="cardChica" class="col-sm-12 col-md-6">
-                        <h3>
-                            <a href="banconApp.html">Bancon app</a>
-                        </h3>
+                    <div class="col-sm-12 col-md-6 card-blanca">
+                        <img src="../img/bancon-app.png" class="img-fluid" alt="proyecto bancon">
+                        <!--<div class="card-img-overlay ">
+                            <a href="linksInternos/banconApp.html">Bancon app</a>
+                        </div> -->          
                     </div>
-                    <div id="cardChica" class="col-sm-12 col-md-6">
-                        <h3>
-                            <a href="plentyApp.html">Plenty app</a>
-                        </h3>
+                    <div class="col-sm-12 col-md-6 card-blanca">
+                        <img src="../img/plenty-app.png" class="img-fluid" alt="proyecto cuidarte">
+                        <!--<div class="card-img-overlay">
+                            <a href="linksInternos/plentyApp.html">Cuidarte app</a>
+                        </div> -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 card-blanca">
+                        <img src="../img/courierx-app.png" class="img-fluid" alt="proyecto bancon">
+                        <!--<div class="card-img-overlay ">
+                            <a href="linksInternos/banconApp.html">Bancon app</a>
+                        </div> -->          
+                    </div>
+                    <div class="col-sm-12 col-md-6 card-blanca">
+                        <img src="../img/cuidarte-app.png" class="img-fluid" alt="proyecto cuidarte">
+                        <!--<div class="card-img-overlay">
+                            <a href="linksInternos/plentyApp.html">Cuidarte app</a>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -126,7 +152,7 @@
     <footer>
         <div class="footer">
             <div>
-                <h3>grax por llegar hasta acá <br><span id="seccionTitlePink">follow</span><span id="seccionEspecial">!</span></h3>
+                <h3>grax por llegar hasta acá <br><span id="titulo-fucsia">follow</span><span id="titulo-rosa">!</span></h3>
             </div>
             <ul class="d-flex justify-content-center">
                 <li>
