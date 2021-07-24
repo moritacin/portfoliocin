@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*Nestign anidamiento*/
 /*Extends*/
-.card-blanca img, .card-rosa h3 {
+.card-proyecto img, .card-rosa h3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.card-blanca img, .card-rosa h3 {
+.card-proyecto img, .card-rosa h3 {
   margin: 15px;
   border-radius: 10px;
   font-size: 45px;
@@ -203,7 +203,7 @@ ul li {
 }
 
 /*Cards blanca*/
-.card-blanca img:hover {
+.card-proyecto img:hover {
   filter: brightness(50%);
 }
 
