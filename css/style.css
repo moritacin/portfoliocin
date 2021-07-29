@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*Nestign anidamiento*/
 /*Extends*/
-.card-proyecto img, .card-rosa h3 {
+.card-proyecto a, .card-proyecto img, .card-rosa h3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,9 +15,9 @@
 }
 
 .card-proyecto img, .card-rosa h3 {
-  margin: 15px;
+  margin-bottom: 30px;
   border-radius: 10px;
-  font-size: 45px;
+  font-size: 32px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -45,10 +45,6 @@
 }
 
 .container, .container-lg, .container-md, .container-sm, .container-xl {
-  max-width: 1520px;
-}
-
-.container-especial {
   max-width: 1120px;
 }
 
@@ -58,6 +54,11 @@ body {
 }
 
 a {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 24px;
+}
+a:hover {
   text-decoration: none;
 }
 
@@ -202,9 +203,16 @@ ul li {
   background: linear-gradient(180deg, #FF848A, #e82349);
 }
 
-/*Cards blanca*/
-.card-proyecto img:hover {
+/*Cards proyecto*/
+.card-proyecto a {
+  position: absolute;
+  color: transparent;
+}
+.card-proyecto:hover img {
   filter: brightness(50%);
+}
+.card-proyecto:hover a {
+  color: #fff;
 }
 
 /*Cards transform*/

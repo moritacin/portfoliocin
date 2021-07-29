@@ -16,15 +16,32 @@
     }
 }
 
-/*Cards blanca*/
-.card-proyecto img { 
-    @extend %card;
-    @extend %flex;
+/*Cards proyecto*/
+.card-proyecto { 
 
-    &:hover {
-        filter: brightness(50%);
+    img {
+        @extend %card;
+        @extend %flex;
+
     }
+
+    a {
+        @extend %flex;
+        position: absolute;
+        color: transparent;
+    }
+
+    &:hover img {
+        filter: brightness(50%);
+
+    }
+
+    &:hover a {
+        color: $blanco;
+    }
+
 }
+
 
 /*Cards transform*/
 .card-transf-gradiente {
