@@ -66,35 +66,29 @@
 
         <!-- Comienzo de formulario-->
 
-        <section class="formulario">
-            <h2>contacto!</h2>
-            <form action="enviar.php" method="POST" enctype="multipart/form-data">
-                <table>
-                 <tbody class="formularioContenedor">
-                    <tr class="formularioContacto">
-                        <td class="formularioLabel">
-                            <label id="labelUno"for="nombre">nombre</label>
-                            <label id="labelDos"for="email">email</label>
-                        </td>
-                    </tr>
-                    <tr class="formularioInput">
-                        <td class="formularioInputGrid">
-                            <input type="text" name="nombre" id="formularioInputUno" class="formularioTd">
-                            <input type="email" name="email" id="formularioInputDos" class="formularioTd">
-                        </td>
-                    </tr>
-                    <tr class="formularioTextArea">
-                        <td>
-                            <label for="mensaje">mensaje</label>
-                            <textarea name="" id="">Escribe aqui tu mensaje</textarea>
-                        </td>
-                    </tr>
-                 </tbody>
-                </table>
-                <div class="d-flex justify-content-center">
-                    <a href="linksInternos/portfolio.html" class="boton">Enviar</a>
-                </div>
-            </form>
+        <section class="container-grey">
+            <div class="container">
+                <h2>contacto!</h2>
+                <form action="enviar.php" method="POST" enctype="multipart/form-data">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="formGroupExampleInput">nombre</label>
+                            <input type="text" class="form-control" placeholder="Romina Suarez">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="formGroupExampleInput">email</label>
+                            <input type="text" class="form-control" placeholder="r.suarez@gmail.com">
+                          </div>
+                          <div class="form-group col-md-12">
+                            <label for="formGroupExampleInput">mensaje</label>
+                            <textarea name="mensaje" data-validate="" class="form-control" placeholder="Hola :) Escribi aca tu mensaje"required style="height: 250px;"></textarea>
+                          </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="linksInternos/portfolio.html" class="boton">Enviar</a>
+                    </div>
+                </form> 
+            </div>
         </section>
 
         <!--Fin formulario-->

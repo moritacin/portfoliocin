@@ -7,12 +7,11 @@
     background: $rosa-claro;
     margin-bottom: 40px;
     color: $fucsia;
-    height: 30rem;
+    height: 35rem;
 
     &:hover {
         color: $blanco;
         background: $gradiente
-
     }
 }
 
@@ -42,19 +41,20 @@
 
 }
 
-
 /*Cards transform*/
-.card-transf-gradiente {
+.card-transf-gradiente div {
     @extend %card-transform;
     color: $blanco;
     background: $gradiente;
+    height: 20rem;
 
 }
 
-.card-transf-rosa {
+.card-transf-rosa div {
     @extend %card-transform;
     color: $negro;
     background-color: $rosa-claro;
+    height: 20rem;
 }
 
 /*Card position*/

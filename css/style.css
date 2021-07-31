@@ -22,9 +22,8 @@
   text-decoration: none;
 }
 
-.card-transf-rosa, .card-transf-gradiente {
-  font-size: 25px;
-  display: inline-block;
+.card-transf-rosa div, .card-transf-gradiente div {
+  justify-content: center;
   align-content: center;
   text-align: center;
   border-radius: 20px;
@@ -40,8 +39,8 @@
 }
 
 .container-long {
-  height: 580px;
-  padding: 35px;
+  width: 1600px;
+  height: 480px;
 }
 
 .container, .container-lg, .container-md, .container-sm, .container-xl {
@@ -92,7 +91,7 @@ h3 {
 }
 
 h4 {
-  font-size: 32px;
+  font-size: 24px;
   padding: 10px;
 }
 
@@ -196,7 +195,7 @@ ul li {
   background: #FCF2F2;
   margin-bottom: 40px;
   color: #e82349;
-  height: 30rem;
+  height: 35rem;
 }
 .card-rosa h3:hover {
   color: #fff;
@@ -216,14 +215,16 @@ ul li {
 }
 
 /*Cards transform*/
-.card-transf-gradiente {
+.card-transf-gradiente div {
   color: #fff;
   background: linear-gradient(180deg, #FF848A, #e82349);
+  height: 20rem;
 }
 
-.card-transf-rosa {
+.card-transf-rosa div {
   color: #262626;
   background-color: #FCF2F2;
+  height: 20rem;
 }
 
 /*Card position*/
@@ -259,100 +260,17 @@ ul li {
 }
 
 /*Formulario*/
-.formulario {
-  background-color: #F9F9F9;
-  display: grid;
-  justify-content: center;
-  grid-template-areas: "";
-}
-
-.formularioContenedor {
-  margin: 50px;
-  display: grid;
-  /*Uso de grid*/
-  grid-template-columns: auto;
-  grid-column-gap: 10px;
-  grid-template-rows: auto;
-  grid-template-areas: "formularioContacto formularioContacto" "formularioInput formularioInput" "formularioTextArea formularioTextArea";
-  justify-content: center;
-}
-
-.formularioContacto {
-  grid-area: formularioContacto;
-}
-
-.formularioInput {
-  grid-area: formularioInput;
-}
-
-.formularioTextArea {
-  grid-area: formularioTextArea;
-  margin-top: 25px;
-}
-
-.formularioLabel {
-  display: grid;
-  /*Uso de grid*/
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-column-gap: 10px;
-  grid-template-areas: "labelUno labelDos";
-}
-
-#labelUno {
-  grid-area: labelUno;
-  width: 424px;
-  font-weight: 600px;
-}
-
-#labelDos {
-  grid-area: labelDos;
-  width: 424px;
-}
-
-.formularioInputGrid {
-  display: grid;
-  /*Uso de grid*/
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-column-gap: 10px;
-  grid-template-areas: "formularioInputUno formularioInputDos";
-  justify-content: center;
-}
-
-#formularioInputUno {
-  grid-area: formularioInputUno;
-}
-
-#formularioInputDos {
-  grid-area: formularioInputDos;
-}
-
-.formularioTd {
-  width: 424px;
-  height: 60px;
-  margin-right: 15px;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-textarea {
-  width: 875px;
-  height: 395px;
-  border-radius: 10px;
-  background-color: #fff;
-  margin: 8px 0;
-  resize: none;
+.form-row label {
   display: block;
-  padding: 25px;
-  color: #565656;
-  font-family: "Montserrat", sans-serif;
-}
-
-label {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 24px;
+  color: #262626;
+}
+
+.form-inline .form-control {
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
