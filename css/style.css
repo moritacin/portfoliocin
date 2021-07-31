@@ -73,7 +73,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 800;
   text-align: center;
   color: #FF848A;
@@ -85,13 +85,13 @@ h2 #align-left {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   margin-top: 20px;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 20px;
   padding: 10px;
 }
 
@@ -257,6 +257,9 @@ ul li {
   background: #fff;
   height: 18rem;
   margin-bottom: 25px;
+}
+.cardIcon img {
+  height: 30%;
 }
 
 /*Formulario*/

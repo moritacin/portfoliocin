@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cin Morales</title>
+
+    <!-- Meta etiquetas / SEO -->
+
+    <!-- Tiene que tener entre 70 a 320 caracteres -->
+    <meta name="description" content="Selección de mis proyectos destacados. Soy industrial designer, ux ui desinger & front end developer.">
+
+    <!-- Favicon - para logo de empresa -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Keywords - Tienen que estar separadas por comas / 15 keywords originales -->
+    <meta name="keywords" content="desarrollo web, diseño ux ui, diseño integral, cin projects, mi camino, proyectos de diseño, portfolio diseñadora, diseñadora made in Cordoba">
+
+    <!-- Open graph -->
+    <meta property="og:title" content="Cin Morales | Mi portfolio">
+    <meta property="og:url" content="https://cinmorales.com">
+    <meta property="og:image" content="https://cinmorales.com">
+    <meta property="og:description" content="Selección de mis proyectos destacados. Soy industrial designer, ux ui desinger & front end developer.">
+    <meta property="og:locale" content="en_ES">
+
+    <!-- Links -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Título: Tiene que estar entre los 35 a 65 caracteres -->
+    <title>Cin Morales | Industrial Designer · UX UI Designer </title>
+
 </head>
 <body>
 
-    <!--Menu de navegación-->
+    <!-- Menu de navegación -->
 
     <header class="container-grey">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.svg" alt="logocin" width="80" height="80" id="logo">
+                    <img src="img/logo.svg" alt="logo cin morales" width="80" height="80" id="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -40,14 +65,16 @@
         </div>
     </header>
 
-    <!--Fin menu de navegación-->
+    <!-- Fin menu de navegación -->
+    <main>
 
-        <!--Comienzo seccion 1-->
+        <!-- Comienzo seccion 1 -->
+
         <section class="container-grey">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
-                        <h1 id="titulo-negro">
+                        <h1 id="titulo-negro animate__animated animate__bounce">
                             hola<span id="titulo-rosa">, </span>soy  <br><span id="titulo-fucsia">Cin Morales</span><span id="titulo-rosa">.</span>
                         </h1>
                         <h3 id="titulo-gris">
@@ -56,54 +83,55 @@
                             <span id="titulo-rosa">·</span> front end developer</h3>   
                     </div>
                     <div class="col-xs-12 col-md-6">
-                        <img src="img/fotoCin1.png" class="img-fluid"alt="Foto de Cin">
+                        <img src="img/fotoCin1.png" class="img-fluid" alt="Foto personal para que me conozcan" loading="lazy">
                     </div>
                 </div>
          </div>
         </section>
 
-        <!--Fin seccion 1-->
+        <!-- Fin seccion 1 -->
 
-        <!--Comienzo seccion 2-->
+        <!-- Comienzo seccion 2 -->
+        
         <section class="container-white">
             <h2>mis servicios</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-6 card-rosa">
+                    <div class="col-xs-12 col-md-6 card-rosa">
                         <h3 href="linksInternos/disenoUxUi.html">diseño ux · ui</h3>
                     </div>
-                    <div class="col-6 card-rosa">
+                    <div class="col-xs-12 col-md-6 card-rosa">
                         <h3 href="linksInternos/disenoProducto.html">diseño industrial</h3>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--Fin seccion 2-->
+        <!-- Fin seccion 2 -->
 
-        <!--Comienzo seccion 3-->
+        <!-- Comienzo seccion 3 -->
 
         <section class="container-grey">
             <h2>proyectos destacados</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 card-proyecto">
-                        <img src="img/bancon-app.png" class="img-fluid" alt="proyecto bancon">
-                        <a class="card-img-overlay" href="linksInternos/banconApp.html">Bancon</a>        
+                        <img src="img/bancon-app.png" class="img-fluid" alt="portada proyecto Bancon" loading="lazy">
+                        <a class="card-img-overlay" href="#">Bancon</a>        
                     </div>
                     <div class="col-sm-12 col-md-6 card-proyecto">
-                        <img src="img/cuidarte-app.png" class="img-fluid" alt="proyecto cuidarte">
-                        <a class="card-img-overlay" href="linksInternos/cuidarteApp.html">Cuidarte</a>
+                        <img src="img/cuidarte-app.png" class="img-fluid" alt="portada proyecto Cuidarte" loading="lazy">
+                        <a class="card-img-overlay" href="#">Cuidarte</a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-6 card-proyecto">
-                        <img src="img/just-cook.png" class="img-fluid" alt="proyecto just cook">
-                        <a class="card-img-overlay" href="linksInternos/justCook.html">Just Cook</a>      
+                        <img src="img/just-cook.png" class="img-fluid" alt="portada proyecto Just Cook" loading="lazy">
+                        <a class="card-img-overlay" href="#">Just Cook</a>      
                     </div>
                     <div class="col-sm-12 col-md-6 card-proyecto">
-                        <img src="img/lamp.png" class="img-fluid" alt="proyecto lampara">
-                        <a class="card-img-overlay" href="linksInternos/lampara.html">Lampara</a>
+                        <img src="img/lamp.png" class="img-fluid" alt="portada proyecto Lampara" loading="lazy">
+                        <a class="card-img-overlay" href="#">Lampara</a>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
@@ -112,30 +140,30 @@
             </div>
         </section>
 
-        <!--Fin seccion 3-->
+        <!-- Fin seccion 3 -->
 
-        <!--Comienzo seccion 4-->
+        <!-- Comienzo seccion 4 -->
 
         <section class="container-white">
             <h2>ultimos posts</h2>
             <div class="container">
                 <div class="card-columns">
                     <div class="card">
-                        <img src="img/noticia1.jpg" class="card-img-top" alt="Métricas para UX Research">
+                        <img src="img/noticia1.jpg" class="card-img-top" alt="Ilustración de portada: Métricas para UX Research" loading="lazy">
                         <div class="card-body">
                             <h3>Métricas para UX Research</h3>
                             <p class="card-text">A la hora de hacer una investigación es fundamental plantear métricas, las cuales nos ayudaran para..</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/noticia2.jpg" class="card-img-top" alt="nota 2">
+                        <img src="img/noticia2.jpg" class="card-img-top" alt="Ilustración de portada: De Diseño Industrial a Diseño UX UI" loading="lazy">
                         <div class="card-body">
-                            <h3>De Diseño Industrial a UX</h3>
+                            <h3>De Diseño Industrial a UX UI</h3>
                             <p class="card-text">Muchos colegas se comienzan a interiorizar en UX, algunos de los motivos son nuestro knowledgement..</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/noticia3.jpg" class="card-img-top" alt="">
+                        <img src="img/noticia3.jpg" class="card-img-top" alt="Ilustración de portada: Como prepararse para una entrevista" loading="lazy">
                         <div class="card-body">
                             <h3>Como prepararse para una entrevista</h3>
                             <p class="card-text">Una gran forma de pasar por una entrevista es pensando que el reclutador es nuestro aliado en..</p>
@@ -145,8 +173,11 @@
             </div>
         </section>
 
-     <!--Fin seccion 4-->
+     <!-- Fin seccion 4 -->
 
+
+    </main>
+        
     <!--Comienzo de footer-->
 
     <footer>
@@ -157,17 +188,17 @@
             <ul class="d-flex justify-content-center">
                 <li>
                     <a href="https://www.linkedin.com/in/cinthiabmorales/" target="_blank">
-                        <img src="img/iconolinkedin.svg" alt="link a linkedin">
+                        <img src="img/iconolinkedin.svg" alt="icono con link a linkedin">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.behance.net/cinthiabmorales" target="_blank">
-                        <img src="img/iconobehance.svg" alt="link a behance">
+                        <img src="img/iconobehance.svg" alt="icono con link a behance">
                     </a>
                 </li>
                 <li>
                     <a href="contacto.html" target="_blank">
-                        <img src="img/iconogmail.svg" alt="ir a enviar mail">
+                        <img src="img/iconogmail.svg" alt="icono de gmail para ir a pagina contacto">
                     </a>
                 </li>
             </ul>
