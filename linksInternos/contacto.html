@@ -12,15 +12,14 @@
     <meta name="description" content="Si necesitas asesoría en tu proyecto o necesitas contactarme para el desarrollo de un proyecto no dudes en escribirme!">
 
     <!-- Favicon - para logo de empresa -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logocin.ico" type="image/x-icon">
 
     <!-- Keywords - Tienen que estar separadas por comas / 15 keywords originales -->
     <meta name="keywords" content="desarrollo web, diseño ux ui, diseño integral, cin projects, mi camino, proyectos de diseño, portfolio diseñadora, diseñadora made in Cordoba">
 
     <!-- Open graph -->
     <meta property="og:title" content="Estemos en contacto | Acortemos las distancias">
-    <meta property="og:url" content="https://cinmorales.com">
-    <meta property="og:image" content="https://cinmorales.com">
+    <meta property="og:url" content="https://cinmoralesportfolio.000webhostapp.com/">
     <meta property="og:description" content="Si necesitas asesoría en tu proyecto o necesitas contactarme para el desarrollo de un proyecto no dudes en escribirme!">
     <meta property="og:locale" content="en_ES">
 
@@ -101,23 +100,23 @@
         <section class="container-grey">
             <div class="container">
                 <h2>contacto!</h2>
-                <form action="enviar.php" method="POST" enctype="multipart/form-data">
+                <form action="enviar.php" method="POST">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="formGroupExampleInput">nombre</label>
-                            <input type="text" class="form-control" placeholder="Romina Suarez">
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Romina Suarez">
                           </div>
                           <div class="form-group col-md-6">
                             <label for="formGroupExampleInput">email</label>
-                            <input type="text" class="form-control" placeholder="r.suarez@gmail.com">
+                            <input type="text" class="form-control" name="mail" id="mail" placeholder="r.suarez@gmail.com">
                           </div>
                           <div class="form-group col-md-12">
                             <label for="formGroupExampleInput">mensaje</label>
-                            <textarea name="mensaje" data-validate="" class="form-control" placeholder="Hola :) Escribi aca tu mensaje"required style="height: 250px;"></textarea>
+                            <textarea name="mensaje" class="form-control" id="mensaje" placeholder="Hola :) Escribi aca tu mensaje"required style="height: 250px;"></textarea>
                           </div>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <a href="linksInternos/portfolio.html" class="boton">Enviar</a>
+                        <input type="submit" class="boton" value="Enviar">
                     </div>
                 </form> 
             </div>
@@ -136,17 +135,17 @@
             </div>
             <ul class="d-flex justify-content-center">
                 <li>
-                    <a href="https://www.linkedin.com/in/cinthiabmorales/" target="_blank">
+                    <a href="https://www.linkedin.com/in/cinthiabmorales/" target="_blank" rel="noopener">
                         <img src="../img/iconolinkedin.svg" alt="link a linkedin">
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.behance.net/cinthiabmorales" target="_blank">
+                    <a href="https://www.behance.net/cinthiabmorales" target="_blank" rel="noopener">
                         <img src="../img/iconobehance.svg" alt="link a behance">
                     </a>
                 </li>
                 <li>
-                    <a href="contacto.html" target="_blank">
+                    <a href="#" target="_blank" rel="noopener">
                         <img src="../img/iconogmail.svg" alt="ir a enviar mail">
                     </a>
                 </li>
