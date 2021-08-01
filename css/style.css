@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*Nestign anidamiento*/
 /*Extends*/
-.card-proyecto a, .card-proyecto img, .card-rosa h3 {
+.card-proyecto a, .card-proyecto img, .card-flip > div, .card-rosa {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.card-proyecto img, .card-rosa h3 {
+.card-proyecto img, .card-back, .card-flip > div, .card-rosa {
   margin-bottom: 30px;
   border-radius: 10px;
   font-size: 32px;
@@ -113,7 +113,7 @@ ul li {
 }
 
 #titulo-gris {
-  color: #c2c0c0;
+  color: #7a7a7a;
 }
 
 /*Header*/
@@ -129,7 +129,7 @@ ul li {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #c2c0c0;
+  color: #7a7a7a;
 }
 
 .navbar-brand {
@@ -190,14 +190,33 @@ ul li {
 }
 
 /*Cards tipologías*/
-/*Cards rosa*/
-.card-rosa h3 {
+/* Flip card rosa */
+.card-flip > div {
   background: #FCF2F2;
-  margin-bottom: 40px;
   color: #e82349;
-  height: 35rem;
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 22rem;
 }
-.card-rosa h3:hover {
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+  background: #FCF2F2;
+}
+
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
   color: #fff;
   background: linear-gradient(180deg, #FF848A, #e82349);
 }
@@ -274,6 +293,10 @@ ul li {
 .form-inline .form-control {
   width: 100%;
   margin-bottom: 15px;
+}
+
+textarea {
+  resize: none;
 }
 
 /*# sourceMappingURL=style.css.map */
