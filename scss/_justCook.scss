@@ -1,0 +1,192 @@
+.title-justCook {
+    display: inline-flex;
+    align-content: center;
+    margin-top: 35px;
+
+    h3 {
+        margin-top: 0px;
+        margin-left: 15px;
+    }
+
+}
+.final-justCook {
+    padding: 35px 0px;
+    
+    h4 {
+        text-align: center;
+
+    }
+    
+    p {
+        text-align: center;
+    }
+}
+
+.portfolio-dk {
+    margin-top: 55px;
+    padding-left: 55px;
+
+    h3 {
+        color: $negro;
+    }
+
+    p {
+        margin-top: 155px;
+    }
+}
+
+.portfolio-dk-a {
+    padding: 25px 0px;
+}
+
+
+.portfolio-mb {
+    margin-top: 20px;
+}
+
+.portfolio-mb-a {
+    margin: 35px 0px;
+}
+
+.card-justCook-1dk {
+    @extend %card-justCook;
+    margin: 55px 0px;
+    padding: 35px;
+    background-color: $gris-medio opacify($color: $gris-medio, $amount: 0.4);
+
+    h3 {
+        margin: 35px 0px;
+        line-height: 40px;
+    }
+
+    p {
+        padding-bottom: 50px;
+        line-height: 35px;
+    }
+}
+
+.card-justCook-2dk {
+    @extend %card-justCook;
+    margin: 15px 0px;
+    padding: 35px;
+    background-color: $negro;
+    color: $blanco;
+
+    h3 {
+        margin: 25px 0px;
+        line-height: 40px;
+    }
+
+    p {
+        line-height: 35px;
+    }
+
+}
+
+.card-justCook-1mb {
+    @extend %card-justCook;
+    background-color: $gris-medio opacify($color: $gris-medio, $amount: 0.4);
+    padding: 15px;
+    margin-bottom: 15px;
+
+    h4 {
+        margin: 15px 0px;
+        line-height: 30px;
+    }
+
+    p {
+        padding-bottom: 20px;
+        line-height: 35px;
+    }
+}
+
+.card-justCook-2mb {
+    @extend %card-justCook;
+    margin: 15px 0px;
+    padding: 15px;
+    background-color: $negro;
+    color: $blanco;
+
+    h4 {
+        margin: 15px 0px;
+        line-height: 30px;
+    }
+
+    p {
+        line-height: 35px;
+    }
+
+}
+
+.card-justCook-dk-img {
+    margin: 45px 0px;
+}
+
+.card-justCook-mb-img {
+    margin: 15px 0px;
+}
+
+.card-justCook-img {
+    @extend %card-justCook;
+    border-radius: 25px;
+    margin: 15px 0px;
+}
+
+.card-justCook-img-mb {
+    @extend %card-justCook;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.mb-final {
+    margin-bottom: 15px;
+}
+
+.card-justCook-white {
+    @extend %card-blanca;
+    padding: 15px;
+
+    p {
+        text-align: center;
+    }
+}
+
+.card-justCook-name {
+    display: inline;
+    justify-content: center;
+
+    h3 {
+        text-align: center;
+        margin-top: 0;
+    }
+
+}
+
+.card-color {
+    background-color: $green;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+
+    p {
+        text-align: center;
+    }
+    
+}
+
+.card-img-pequeña {
+    width: 50%;
+}
+
+.card-img-lateral {
+    margin: 35px 0px;
+    align-content: right;
+}
+
+.card-img-pequeña2 {
+    width: 30%;
+}
+
+.card-text {
+    margin: 115px 0px;
+}
