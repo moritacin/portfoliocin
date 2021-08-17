@@ -5,6 +5,7 @@
 .card-rosa {
     @extend %card;
     @extend %flex;
+    position: relative;
 }
 
 .card-flip > div {
@@ -24,16 +25,16 @@
   }
   
   .card-back {
-    @extend %card;
     transform: rotateY(180deg);
+    @extend %flex;
     position: absolute;
+    top: 0;
 
   }
   
   .card-flip:hover .card-front {
     transform: rotateY(-180deg);
     background: $rosa-claro;
-
   }
     
   .card-flip:hover .card-back {
@@ -68,12 +69,34 @@
 
 }
 
+.card-portfolio { 
+
+    img {
+        @extend %flex;
+
+    }
+
+    h3 {
+        text-align: center;
+        position: absolute;
+        color: $blanco;
+    }
+
+    h4 {
+        text-align: center;
+        position: absolute;
+        color: $blanco;
+    }
+
+}
+
 /*Cards transform*/
 .card-transf-gradiente div {
     @extend %card-transform;
     color: $blanco;
     background: $gradiente;
     height: 20rem;
+    margin-bottom: 25px;
 
 }
 
@@ -82,6 +105,7 @@
     color: $negro;
     background-color: $rosa-claro;
     height: 20rem;
+    margin-bottom: 25px;
 }
 
 /*Card position*/
@@ -100,16 +124,16 @@
 /*Cards con ícono*/
 
 .cardIcon {
+    @extend %card-blanca;
     padding: 45px 10px;
-    border-radius: 10px;
-    text-align: center;
-    background: $blanco;
     height: 18rem;
-    margin-bottom: 25px;
 
     img {
         height: 30%;
     }
 }
 
+.card-body {
+    padding: 0,5rem;
+}
 

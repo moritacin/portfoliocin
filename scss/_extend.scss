@@ -35,3 +35,14 @@
     border-radius: 20px;
 }
 
+%card-justCook {
+    border-radius: 25px;
+    box-shadow: 0 0 2em rgba(0,0,0,0.2),;
+}
+
+%card-blanca {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background: $blanco;
+}
