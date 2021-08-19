@@ -264,7 +264,7 @@ ul {
   font-size: 18px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 990px) {
   .nav-link {
     margin: 35px 0px;
   }
