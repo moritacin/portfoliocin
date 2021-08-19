@@ -50,3 +50,76 @@
 #detail-black {
     color: $negro;
 }
+
+/*Title Just Cook*/
+
+.title-justCook {
+    display: inline-flex;
+    align-content: center;
+    margin-top: 35px;
+
+    h3 {
+        margin-top: 0px;
+        margin-left: 15px;
+    }
+
+}
+.final-justCook {
+    padding: 35px 0px;
+    
+    h4 {
+        text-align: center;
+
+    }
+    
+    p {
+        text-align: center;
+    }
+}
+
+.portfolio-dk {
+    margin-top: 55px;
+    padding-left: 55px;
+
+    h3 {
+        color: $negro;
+    }
+
+    p {
+        margin-top: 155px;
+    }
+}
+
+.portfolio-dk-a {
+    padding: 25px 0px;
+}
+
+
+.portfolio-mb {
+    margin-top: 20px;
+}
+
+.portfolio-mb-a {
+    margin: 35px 0px;
+}
+
+/*Title flat lamp*/
+
+.text-lamp {
+    margin: 25px;
+    h3 {
+        text-align: center;
+    }
+}
+
+.text-lamp-final {
+    padding: 15px;
+
+    h4 {
+        text-align: center;
+    }
+    
+    p {
+        text-align: center;
+    }
+}
