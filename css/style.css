@@ -238,6 +238,11 @@ ul {
   margin: 35px 0px;
 }
 
+.text-justCook {
+  margin-top: 180px;
+  padding: 0px 50px;
+}
+
 /*Title flat lamp*/
 .text-lamp {
   margin: 25px;
@@ -254,6 +259,72 @@ ul {
 }
 .text-lamp-final p {
   text-align: center;
+}
+
+/*Title bancon*/
+.title-bancon {
+  display: inline-flex;
+  align-content: center;
+  margin-top: 35px;
+}
+.title-bancon h3 {
+  margin-top: 70px;
+  margin-left: 15px;
+}
+
+.title-bancon-inline {
+  display: inline-flex;
+  align-content: center;
+  margin-top: 100px;
+}
+
+.title-bancon-inline-mb {
+  display: inline-flex;
+  align-content: center;
+  margin-top: 50px;
+}
+.title-bancon-inline-mb h4 {
+  margin-top: 25px;
+}
+
+.title-bancon-mb {
+  display: inline-flex;
+  align-content: center;
+  margin-top: 35px;
+}
+.title-bancon-mb h4 {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.text-bancon-dk {
+  margin: 40px 100px;
+}
+
+.text-bancon-mb {
+  margin: 20px 10px;
+}
+
+.text-bancon-center h3 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+.text-bancon-center h4 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.text-bancon-etapas {
+  margin-top: 160px;
+}
+
+.subtext-bancon {
+  padding: 50px;
+}
+
+.margin-bancon-left {
+  margin: 0px 70px;
 }
 
 /*Header*/
@@ -300,7 +371,7 @@ ul {
 
 @media (max-width: 992px) {
   .mobileMenu {
-    transform: translateX(-100%);
+    transform: translateX(100%);
     position: fixed;
     top: 0px;
     bottom: 0;
@@ -344,7 +415,7 @@ ul {
 }
 
 .mobileMenu {
-  width: 90%;
+  width: 100%;
   text-align: center;
   justify-content: center;
 }
@@ -618,6 +689,10 @@ ul li {
   text-align: center;
   margin-top: 0;
 }
+.card-justCook-name h4 {
+  text-align: center;
+  margin-top: 0;
+}
 
 .card-color {
   background-color: #B0DDCE;
@@ -642,9 +717,63 @@ ul li {
   align-content: right;
 }
 
-.text-justCook {
-  margin-top: 180px;
-  padding: 0px 50px;
+/*Bancon*/
+.icn-bancon-dk {
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+.icn-bancon-mb {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.icon-bancon-inline {
+  margin: 20px;
+}
+
+.card-bancon-1 {
+  background: linear-gradient(-270deg, #2ec2c269, #0e7e7ee1);
+  display: inline-flex;
+  border-radius: 0px 20px 20px 0px;
+  margin: 15px 0px;
+}
+.card-bancon-1 h3 {
+  margin: 0px 25px;
+  font-size: 80px;
+  color: #fff;
+}
+.card-bancon-1 h4 {
+  margin: 0px 25px;
+  font-size: 80px;
+  color: #fff;
+}
+.card-bancon-1 p {
+  margin: 20px 0px;
+  color: #fff;
+}
+
+.card-bancon-2 {
+  background-color: #fff;
+  border-radius: 0px 20px 20px 0px;
+  margin: 15px 0px;
+}
+.card-bancon-2 p {
+  padding: 20px;
+}
+
+.card-bancon-3 {
+  background: linear-gradient(270deg, #369f95a1, #369f9544);
+  padding: 15px;
+  margin: 15px 0px;
+  border-radius: 15px;
+}
+.card-bancon-3 p {
+  margin-bottom: 0px;
+}
+
+.bancon-col-int {
+  margin: 50px;
 }
 
 /*Formulario*/

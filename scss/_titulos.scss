@@ -62,8 +62,8 @@
         margin-top: 0px;
         margin-left: 15px;
     }
-
 }
+
 .final-justCook {
     padding: 35px 0px;
     
@@ -103,6 +103,12 @@
     margin: 35px 0px;
 }
 
+.text-justCook {
+    margin-top: 180px;
+    padding: 0px 50px;
+}
+
+
 /*Title flat lamp*/
 
 .text-lamp {
@@ -122,4 +128,78 @@
     p {
         text-align: center;
     }
+}
+
+/*Title bancon*/
+
+.title-bancon {
+    display: inline-flex;
+    align-content: center;
+    margin-top: 35px;
+
+    h3 {
+        margin-top: 70px;
+        margin-left: 15px;
+    }
+}
+
+.title-bancon-inline {
+    display: inline-flex;
+    align-content: center;
+    margin-top: 100px;
+
+}
+
+.title-bancon-inline-mb {
+    display: inline-flex;
+    align-content: center;
+    margin-top: 50px;
+
+    h4 {
+        margin-top: 25px;
+    }
+}
+
+.title-bancon-mb {
+    display: inline-flex;
+    align-content: center;
+    margin-top: 35px;
+
+    h4 {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+}
+
+.text-bancon-dk {
+    margin: 40px 100px;
+}
+
+.text-bancon-mb {
+    margin: 20px 10px;
+}
+
+.text-bancon-center {
+    h3 {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 25px;
+    }
+
+    h4 {
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+.text-bancon-etapas {
+    margin-top: 160px;
+}
+
+.subtext-bancon {
+    padding: 50px;
+}
+
+.margin-bancon-left {
+    margin: 0px 70px;
 }

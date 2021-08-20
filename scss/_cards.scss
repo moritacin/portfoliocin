@@ -251,6 +251,11 @@
         margin-top: 0;
     }
 
+    h4 {
+        text-align: center;
+        margin-top: 0;
+    }
+
 }
 
 .card-color {
@@ -280,9 +285,69 @@
     align-content: right;
 }
 
-.text-justCook {
-    margin-top: 180px;
-    padding: 0px 50px;
+/*Bancon*/
+
+.icn-bancon-dk {
+    margin-top: 40px; 
+    margin-left: 60px; 
+}
+
+.icn-bancon-mb {
+    margin-top: 30px; 
+    margin-left: 10px; 
+}
+
+.icon-bancon-inline {
+    margin: 20px; 
+}
+
+.card-bancon-1 {
+    background: $green-gradient;
+    display: inline-flex;
+    border-radius: 0px 20px 20px 0px;
+    margin: 15px 0px;
+    
+    h3 {
+        margin: 0px 25px;
+        font-size: 80px;
+        color: $blanco;
+    }
+
+    h4 {
+        margin: 0px 25px;
+        font-size: 80px;
+        color: $blanco;
+    }
+
+    p {
+        margin: 20px 0px;
+        color: $blanco;
+
+    }
+}
+
+.card-bancon-2 {
+    background-color: $blanco;
+    border-radius: 0px 20px 20px 0px;
+    margin: 15px 0px;
+
+    p {
+        padding: 20px;
+    }
 }
 
 
+.card-bancon-3 {
+    background: $lg-green-gradient;
+    padding: 15px;
+    margin: 15px 0px;
+    border-radius: 15px;
+
+    p {
+        margin-bottom: 0px;
+    }
+}
+
+.bancon-col-int {
+    margin: 50px;
+}
