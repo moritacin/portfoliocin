@@ -302,9 +302,8 @@
 }
 
 .card-bancon-1 {
+    @extend %card-bancon-lateral;
     background: $green-gradient;
-    display: inline-flex;
-    border-radius: 0px 20px 20px 0px;
     margin: 15px 0px;
     
     h3 {
@@ -338,7 +337,6 @@
 
 }
 
-
 .card-bancon-3 {
     background: $lg-green-gradient;
     padding: 15px;
@@ -350,68 +348,83 @@
     }
 }
 
-.card-bancon-personas {
-    background-color: $blanco;
-    border-radius: 20px 20px 0px 0px;
-    padding: 20px;
-    margin-bottom: 15px;
+.card-bancon-4 {
+    background: $lg-green-gradient;
+    padding: 15px;
+    border-radius: 15px 15px 0px 0px;
+}
 
-    h3 {
+.card-sorting {
+    @extend %card-bancon-lateral;
+    background: $blanco;
+    margin: 5px 0px;
+    
+    h4 {
+        color: $green;
+        margin: 40px 20px;
+        font-size: 30px;
         text-align: center;
     }
 
+    p {
+        margin: 20px 0px;
+    }
+}
+
+
+.text-tree-testing {
+    @extend %card-bancon-lateral;
+    padding: 10px;
+
+    h3 {
+        font-size: 70px;
+        margin-top: 0px;
+        padding: 10px;
+    }
+
+    p {
+        margin-bottom: 0px;
+        padding: 10px;
+    }
+}
+
+.card-tree-testing {
+    @extend %card-bancon-mapas;
+
+    p {
+        padding: 20px;
+    }
+}
+
+.card-bancon-personas {
+    @extend %card-bancon-personas;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .card-bancon-personas-mb {
-    background-color: $blanco;
+    @extend %card-bancon-personas;
     border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 15px;
-
-    h4 {
-        text-align: center;
-    }
 }
 
-
 .card-bancon-bench-positive {
-    background-color: $blanco;
+    @extend %card-bancon-bench;
     border: $positive 2px solid;
-    border-radius: 20px;
-    margin: 15px 0px;
-    
-    
-        p {
-            padding: 20px;
-            margin-bottom: 0px;
-        }
-
 }
 
 .card-bancon-bench-negative {
-    background-color: $blanco;
+    @extend %card-bancon-bench;
     border: $negative 2px solid;
-    border-radius: 20px;
-    margin: 15px 0px;
-    
-    
-        p {
-            padding: 20px;
-            margin-bottom: 0px;
-        }
-
 }
 
 .card-bancon-matriz {
-    background-color: $blanco;
-    border-radius: 20px 20px 0px 0px;
+    @extend %card-bancon-mapas;
     padding: 10px;
     height: 620px;
+}
 
-    h4 {
-        text-align: center;
-    }
-
+.card-bancon-mapa {
+    @extend %card-bancon-mapas;
+    padding: 10px 10px 0px 10px;
 }
 
 .bancon-porcentaje {

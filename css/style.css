@@ -53,6 +53,41 @@
   color: #fff;
 }
 
+.card-bancon-bench-negative, .card-bancon-bench-positive {
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 15px 0px;
+}
+.card-bancon-bench-negative p, .card-bancon-bench-positive p {
+  padding: 20px;
+  margin-bottom: 0px;
+}
+
+.card-bancon-personas-mb, .card-bancon-personas {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.card-bancon-personas-mb h4, .card-bancon-personas h4 {
+  text-align: center;
+}
+.card-bancon-personas-mb h3, .card-bancon-personas h3 {
+  text-align: center;
+}
+
+.card-bancon-mapa, .card-bancon-matriz, .card-tree-testing {
+  background-color: #fff;
+  border-radius: 20px 20px 0px 0px;
+}
+.card-bancon-mapa h4, .card-bancon-matriz h4, .card-tree-testing h4 {
+  text-align: center;
+}
+
+.text-tree-testing, .card-sorting, .card-bancon-1 {
+  display: inline-flex;
+  border-radius: 0px 20px 20px 0px;
+}
+
 /*Container*/
 .bg-grey {
   background-color: #F9F9F9;
@@ -311,6 +346,10 @@ ul {
   margin: 20px 10px;
 }
 
+.text-bancon-mvp {
+  margin: 80px 40px;
+}
+
 .text-bancon-center h3 {
   text-align: center;
   margin-top: 100px;
@@ -326,7 +365,7 @@ ul {
 }
 
 .text-bancon-insight {
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .subtext-bancon {
@@ -335,6 +374,10 @@ ul {
 
 .margin-bancon-left {
   margin: 0px 70px;
+}
+
+#text-align-center {
+  text-align: center;
 }
 
 /*Header*/
@@ -744,8 +787,6 @@ ul li {
 
 .card-bancon-1 {
   background: linear-gradient(-270deg, #2ec2c269, #0e7e7ee1);
-  display: inline-flex;
-  border-radius: 0px 20px 20px 0px;
   margin: 15px 0px;
 }
 .card-bancon-1 p {
@@ -776,56 +817,66 @@ ul li {
   margin-bottom: 0px;
 }
 
-.card-bancon-personas {
-  background-color: #fff;
-  border-radius: 20px 20px 0px 0px;
-  padding: 20px;
-  margin-bottom: 15px;
+.card-bancon-4 {
+  background: linear-gradient(270deg, #369f95a1, #369f9544);
+  padding: 15px;
+  border-radius: 15px 15px 0px 0px;
 }
-.card-bancon-personas h3 {
+
+.card-sorting {
+  background: #fff;
+  margin: 5px 0px;
+}
+.card-sorting h4 {
+  color: #B0DDCE;
+  margin: 40px 20px;
+  font-size: 30px;
   text-align: center;
+}
+.card-sorting p {
+  margin: 20px 0px;
+}
+
+.text-tree-testing {
+  padding: 10px;
+}
+.text-tree-testing h3 {
+  font-size: 70px;
+  margin-top: 0px;
+  padding: 10px;
+}
+.text-tree-testing p {
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+.card-tree-testing p {
+  padding: 20px;
+}
+
+.card-bancon-personas {
+  border-radius: 20px 20px 0px 0px;
 }
 
 .card-bancon-personas-mb {
-  background-color: #fff;
   border-radius: 20px;
-  padding: 20px;
-  margin-bottom: 15px;
-}
-.card-bancon-personas-mb h4 {
-  text-align: center;
 }
 
 .card-bancon-bench-positive {
-  background-color: #fff;
   border: #55FFBE 2px solid;
-  border-radius: 20px;
-  margin: 15px 0px;
-}
-.card-bancon-bench-positive p {
-  padding: 20px;
-  margin-bottom: 0px;
 }
 
 .card-bancon-bench-negative {
-  background-color: #fff;
   border: #FF6355 2px solid;
-  border-radius: 20px;
-  margin: 15px 0px;
-}
-.card-bancon-bench-negative p {
-  padding: 20px;
-  margin-bottom: 0px;
 }
 
 .card-bancon-matriz {
-  background-color: #fff;
-  border-radius: 20px 20px 0px 0px;
   padding: 10px;
   height: 620px;
 }
-.card-bancon-matriz h4 {
-  text-align: center;
+
+.card-bancon-mapa {
+  padding: 10px 10px 0px 10px;
 }
 
 .bancon-porcentaje {
