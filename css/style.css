@@ -47,6 +47,12 @@
   background: #fff;
 }
 
+.card-bancon-1 h4, .card-bancon-1 h3 {
+  margin: 0px 25px;
+  font-size: 80px;
+  color: #fff;
+}
+
 /*Container*/
 .bg-grey {
   background-color: #F9F9F9;
@@ -317,6 +323,10 @@ ul {
 
 .text-bancon-etapas {
   margin-top: 160px;
+}
+
+.text-bancon-insight {
+  margin-top: 120px;
 }
 
 .subtext-bancon {
@@ -738,16 +748,6 @@ ul li {
   border-radius: 0px 20px 20px 0px;
   margin: 15px 0px;
 }
-.card-bancon-1 h3 {
-  margin: 0px 25px;
-  font-size: 80px;
-  color: #fff;
-}
-.card-bancon-1 h4 {
-  margin: 0px 25px;
-  font-size: 80px;
-  color: #fff;
-}
 .card-bancon-1 p {
   margin: 20px 0px;
   color: #fff;
@@ -755,11 +755,15 @@ ul li {
 
 .card-bancon-2 {
   background-color: #fff;
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 20px;
   margin: 15px 0px;
 }
 .card-bancon-2 p {
   padding: 20px;
+}
+.card-bancon-2 h4 {
+  text-align: center;
+  padding-top: 15px;
 }
 
 .card-bancon-3 {
@@ -770,6 +774,58 @@ ul li {
 }
 .card-bancon-3 p {
   margin-bottom: 0px;
+}
+
+.card-bancon-personas {
+  background-color: #fff;
+  border-radius: 20px 20px 0px 0px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.card-bancon-personas h3 {
+  text-align: center;
+}
+
+.card-bancon-personas-mb {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.card-bancon-personas-mb h4 {
+  text-align: center;
+}
+
+.card-bancon-bench-positive {
+  background-color: #fff;
+  border: #55FFBE 2px solid;
+  border-radius: 20px;
+  margin: 15px 0px;
+}
+.card-bancon-bench-positive p {
+  padding: 20px;
+  margin-bottom: 0px;
+}
+
+.card-bancon-bench-negative {
+  background-color: #fff;
+  border: #FF6355 2px solid;
+  border-radius: 20px;
+  margin: 15px 0px;
+}
+.card-bancon-bench-negative p {
+  padding: 20px;
+  margin-bottom: 0px;
+}
+
+.card-bancon-matriz {
+  background-color: #fff;
+  border-radius: 20px 20px 0px 0px;
+  padding: 10px;
+  height: 620px;
+}
+.card-bancon-matriz h4 {
+  text-align: center;
 }
 
 .bancon-porcentaje {
@@ -785,6 +841,7 @@ ul li {
 
 .bancon-col-int {
   margin: 60px;
+  margin-bottom: 0px;
 }
 
 .bancon-col-int-mb {
