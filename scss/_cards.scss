@@ -340,7 +340,7 @@
 .card-bancon-3 {
     background: $lg-green-gradient;
     padding: 15px;
-    margin: 15px 0px;
+    margin: 10px 20px 10px 0px;
     border-radius: 15px;
 
     p {
@@ -348,6 +348,24 @@
     }
 }
 
+.bancon-porcentaje {
+    background: $lg-green-gradient;
+    border-radius: 5px;
+    text-align: end;
+    margin: 10px;
+}
+
+.bancon-ul-li {
+    ul li {
+        margin: 10px;
+    }
+    
+}
+
 .bancon-col-int {
-    margin: 50px;
+    margin: 60px;
+}
+
+.bancon-col-int-mb {
+    margin: 20px 10px;
 }
