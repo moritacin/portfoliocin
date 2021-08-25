@@ -16,21 +16,6 @@
     color: $gris;
 }
 
-#text-etapas-dk {
-    color: $gris-medio;
-    font-size: 125px;
-    font-weight: 200;
-    text-align: right;
-}
-
-#text-etapas-mb {
-    color: $gris-medio;
-    font-size: 55px;
-    font-weight: 200;
-    text-align: right;
-}
-
-
 #strong {
     font-weight: 700;
 }
@@ -77,30 +62,25 @@
     }
 }
 
-.portfolio-dk {
-    margin-top: 55px;
-    padding-left: 55px;
-
-    h3 {
-        color: $negro;
-    }
-
-    p {
-        margin-top: 155px;
-    }
-}
-
-.portfolio-dk-a {
-    padding: 25px 0px;
-}
-
-
-.portfolio-mb {
+.portfolio-jc {
     margin-top: 20px;
+    @media (min-width: 1024px) {
+        margin-top: 55px;
+        padding-left: 55px;
+    
+        h3 {
+            color: $negro;
+        }
+    
+        p {
+            margin-top: 120px;
+        }
+    }
+
 }
 
-.portfolio-mb-a {
-    margin: 35px 0px;
+.portfolio-jc-a {
+    padding: 25px 0px;
 }
 
 .text-justCook {
@@ -108,6 +88,22 @@
     padding: 0px 50px;
 }
 
+.text-etapas-jc {
+    color: $gris-medio;
+    font-size: 55px;
+    font-weight: 200;
+    text-align: right;
+    @media (min-width: 1024px) {
+        font-size: 125px;
+    }
+}
+
+.icon-jc {
+    height: 30px;
+    @media (min-width: 1024px) {
+        height: 40px;
+    }
+}
 
 /*Title flat lamp*/
 
@@ -181,6 +177,10 @@
 
 .text-bancon-mvp {
     margin: 80px 40px;
+}
+
+.text-bancon-writing {
+    margin: 0px 40px;
 }
 
 .text-bancon-center {

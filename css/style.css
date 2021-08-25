@@ -29,7 +29,30 @@
   border-radius: 20px;
 }
 
-.card-justCook-img-mb, .card-justCook-img, .card-justCook-2mb, .card-justCook-1mb, .card-justCook-2dk, .card-justCook-1dk {
+.card-justCook-img-mb, .card-justCook-negra, .card-justCook-blanca {
+  border-radius: 25px;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+}
+.card-justCook-img-mb h3, .card-justCook-negra h3, .card-justCook-blanca h3 {
+  margin: 35px 0px;
+  line-height: 35px;
+}
+.card-justCook-img-mb p, .card-justCook-negra p, .card-justCook-blanca p {
+  padding-bottom: 20px;
+  line-height: 35px;
+}
+@media (min-width: 1024px) {
+  .card-justCook-img-mb, .card-justCook-negra, .card-justCook-blanca {
+    padding: 35px;
+    margin: 60px 0px;
+  }
+  .card-justCook-img-mb p, .card-justCook-negra p, .card-justCook-blanca p {
+    padding-bottom: 50px;
+    line-height: 35px;
+  }
+}
+
+.card-justCook-img {
   border-radius: 25px;
   box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
 }
@@ -114,8 +137,10 @@
   padding-top: 120px;
 }
 
-.margin-extra {
-  margin: 10px 55px;
+@media (min-width: 1024px) {
+  .margin-extra {
+    margin: 10px 55px;
+  }
 }
 
 .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
@@ -148,12 +173,17 @@ p {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 800;
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 60px;
+  }
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 800;
   text-align: center;
   color: #FF848A;
@@ -163,16 +193,31 @@ h2 {
 h2 #align-left {
   text-align: left;
 }
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 32px;
+  }
+}
 
 h3 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   margin-top: 20px;
 }
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 30px;
+  }
+}
 
 h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
+}
+@media (min-width: 1024px) {
+  h4 {
+    font-size: 20px;
+  }
 }
 
 ul li {
@@ -199,20 +244,6 @@ ul {
 
 #titulo-gris {
   color: #7a7a7a;
-}
-
-#text-etapas-dk {
-  color: #DCDCDC;
-  font-size: 125px;
-  font-weight: 200;
-  text-align: right;
-}
-
-#text-etapas-mb {
-  color: #DCDCDC;
-  font-size: 55px;
-  font-weight: 200;
-  text-align: right;
 }
 
 #strong {
@@ -256,32 +287,50 @@ ul {
   text-align: center;
 }
 
-.portfolio-dk {
-  margin-top: 55px;
-  padding-left: 55px;
-}
-.portfolio-dk h3 {
-  color: #262626;
-}
-.portfolio-dk p {
-  margin-top: 155px;
-}
-
-.portfolio-dk-a {
-  padding: 25px 0px;
-}
-
-.portfolio-mb {
+.portfolio-jc {
   margin-top: 20px;
 }
+@media (min-width: 1024px) {
+  .portfolio-jc {
+    margin-top: 55px;
+    padding-left: 55px;
+  }
+  .portfolio-jc h3 {
+    color: #262626;
+  }
+  .portfolio-jc p {
+    margin-top: 120px;
+  }
+}
 
-.portfolio-mb-a {
-  margin: 35px 0px;
+.portfolio-jc-a {
+  padding: 25px 0px;
 }
 
 .text-justCook {
   margin-top: 180px;
   padding: 0px 50px;
+}
+
+.text-etapas-jc {
+  color: #DCDCDC;
+  font-size: 55px;
+  font-weight: 200;
+  text-align: right;
+}
+@media (min-width: 1024px) {
+  .text-etapas-jc {
+    font-size: 125px;
+  }
+}
+
+.icon-jc {
+  height: 30px;
+}
+@media (min-width: 1024px) {
+  .icon-jc {
+    height: 40px;
+  }
 }
 
 /*Title flat lamp*/
@@ -348,6 +397,10 @@ ul {
 
 .text-bancon-mvp {
   margin: 80px 40px;
+}
+
+.text-bancon-writing {
+  margin: 0px 40px;
 }
 
 .text-bancon-center h3 {
@@ -649,60 +702,20 @@ ul li {
 }
 
 /*Cards Just Cook*/
-.card-justCook-1dk {
-  margin: 55px 0px;
-  padding: 35px;
+.card-justCook-blanca {
+  padding: 15px;
   background-color: #DCDCDC gainsboro;
 }
-.card-justCook-1dk h3 {
+
+.card-img-jc {
+  border-radius: 25px;
   margin: 35px 0px;
-  line-height: 40px;
-}
-.card-justCook-1dk p {
-  padding-bottom: 50px;
-  line-height: 35px;
 }
 
-.card-justCook-2dk {
-  margin: 15px 0px;
-  padding: 35px;
-  background-color: #262626;
-  color: #fff;
-}
-.card-justCook-2dk h3 {
-  margin: 25px 0px;
-  line-height: 40px;
-}
-.card-justCook-2dk p {
-  line-height: 35px;
-}
-
-.card-justCook-1mb {
-  background-color: #DCDCDC gainsboro;
-  padding: 15px;
-  margin-bottom: 15px;
-}
-.card-justCook-1mb h4 {
-  margin: 15px 0px;
-  line-height: 30px;
-}
-.card-justCook-1mb p {
-  padding-bottom: 20px;
-  line-height: 35px;
-}
-
-.card-justCook-2mb {
-  margin: 15px 0px;
+.card-justCook-negra {
   padding: 15px;
   background-color: #262626;
   color: #fff;
-}
-.card-justCook-2mb h4 {
-  margin: 15px 0px;
-  line-height: 30px;
-}
-.card-justCook-2mb p {
-  line-height: 35px;
 }
 
 .card-justCook-dk-img {
@@ -792,6 +805,13 @@ ul li {
 .card-bancon-1 p {
   margin: 20px 0px;
   color: #fff;
+}
+.card-bancon-1 img {
+  margin: 20px;
+}
+
+#bancon-propositos {
+  font-size: 46px;
 }
 
 .card-bancon-2 {
@@ -897,6 +917,10 @@ ul li {
 
 .bancon-col-int-mb {
   margin: 20px 10px;
+}
+
+.img-center {
+  margin: 100px 0px;
 }
 
 /*Formulario*/
