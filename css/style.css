@@ -186,7 +186,7 @@ h2 {
   font-size: 26px;
   font-weight: 800;
   text-align: center;
-  color: #FF848A;
+  color: #737373;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -235,7 +235,7 @@ ul {
 }
 
 #titulo-fucsia {
-  color: #e82349;
+  color: #D92145;
 }
 
 #titulo-rosa {
@@ -243,7 +243,7 @@ ul {
 }
 
 #titulo-gris {
-  color: #7a7a7a;
+  color: #737373;
 }
 
 #strong {
@@ -259,7 +259,7 @@ ul {
 }
 
 #detail-grey {
-  color: #7a7a7a;
+  color: #737373;
 }
 
 #detail-black {
@@ -435,7 +435,7 @@ ul {
 
 /*Header*/
 .nav-link a {
-  color: #e82349;
+  color: #D92145;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -448,11 +448,11 @@ ul {
 }
 
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-  color: #e82349;
+  color: #D92145;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #7a7a7a;
+  color: #737373;
 }
 
 .navbar-light .navbar-toggler {
@@ -516,7 +516,7 @@ ul {
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-  color: #7a7a7a;
+  color: #737373;
   content: ">";
 }
 
@@ -541,7 +541,7 @@ ul {
 
 .redes-mb {
   margin: 25px;
-  border-top: 1px #7a7a7a;
+  border-top: 1px #737373;
   height: 40px;
 }
 
@@ -549,7 +549,7 @@ ul {
   height: 1px;
   margin: 10px 0;
   overflow: hidden;
-  background-color: #7a7a7a;
+  background-color: #737373;
 }
 
 .navbar-toggler {
@@ -577,18 +577,18 @@ ul li {
   border: none;
   width: 298px;
   height: 48px;
-  color: #262626;
+  color: #fff;
   border-radius: 10px;
   text-decoration: none;
-  background: #6FE4CF;
+  background: #0B806B;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 .boton:hover {
-  background-color: #9aecdd;
+  background-color: #0faf92;
   text-decoration: none;
-  color: #262626;
+  color: #fff;
 }
 
 /*Cards tipologías*/
@@ -599,7 +599,7 @@ ul li {
 
 .card-flip > div {
   background: #FCF2F2;
-  color: #e82349;
+  color: #D92145;
   backface-visibility: hidden;
   transition: transform 300ms;
   transition-timing-function: linear;
@@ -625,7 +625,7 @@ ul li {
 .card-flip:hover .card-back {
   transform: rotateY(0deg);
   color: #fff;
-  background: linear-gradient(180deg, #FF848A, #e82349);
+  background: linear-gradient(180deg, #FF848A, #E32249);
 }
 
 /*Cards proyecto*/
@@ -654,7 +654,7 @@ ul li {
 /*Cards transform*/
 .card-transf-gradiente div {
   color: #fff;
-  background: linear-gradient(180deg, #FF848A, #e82349);
+  background: linear-gradient(180deg, #FF848A, #E32249);
   height: 20rem;
   margin-bottom: 25px;
 }

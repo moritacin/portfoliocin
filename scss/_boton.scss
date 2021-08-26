@@ -4,7 +4,7 @@
     border: none;
     width: 298px;
     height: 48px;
-    color: $negro;
+    color: $blanco;
     border-radius: 10px;
     text-decoration: none;
     @extend %inline-flex;
@@ -16,7 +16,7 @@
     &:hover {
         background-color: lighten($aqua, 10%);
         text-decoration: none;
-        color: $negro;
+        color: $blanco;
     }
 }
 
