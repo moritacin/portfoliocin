@@ -8,13 +8,13 @@
     border-radius: 10px;
     text-decoration: none;
     @extend %inline-flex;
-    background: $aqua;
+    background: $violet;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 15px;
 
     &:hover {
-        background-color: lighten($aqua, 10%);
+        background-color: lighten($violet, 10%);
         text-decoration: none;
         color: $blanco;
     }

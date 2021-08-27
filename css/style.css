@@ -580,13 +580,13 @@ ul li {
   color: #fff;
   border-radius: 10px;
   text-decoration: none;
-  background: #0B806B;
+  background: #7236B3;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 .boton:hover {
-  background-color: #0faf92;
+  background-color: #8c51cb;
   text-decoration: none;
   color: #fff;
 }
